@@ -59,8 +59,7 @@ export async function PUT(request: Request, { params }: { params: Promise<{ doma
       });
       return NextResponse.json({ member: updatedMember });
     }
-
-    return NextResponse.json({ member: updatedMember });
+    return NextResponse.json({ error: 'Invalid state' }, { status: 400 });
   } catch (error) {
     console.error('Update member role error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });

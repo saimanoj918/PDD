@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getUserFromCookies } from '@/lib/auth';
 import prisma from '@/lib/prisma';
 
-export async function PUT(request: Request, { params }: { params: { domainId: string } }) {
+export async function PUT(request: Request, { params }: { params: Promise<{ domainId: string }> }) {
   try {
     const user = await getUserFromCookies();
     if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -31,7 +31,7 @@ export async function PUT(request: Request, { params }: { params: { domainId: st
   }
 }
 
-export async function DELETE(request: Request, { params }: { params: { domainId: string } }) {
+export async function DELETE(request: Request, { params }: { params: Promise<{ domainId: string }> }) {
   try {
     const user = await getUserFromCookies();
     if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
