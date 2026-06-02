@@ -3,6 +3,7 @@ export const hi = {
   "sidebar.dashboard": "डैशबोर्ड",
   "sidebar.newDomain": "नया डोमेन",
   "sidebar.invitations": "निमंत्रण",
+  "sidebar.terms": "नियम और शर्तें",
   "sidebar.settings": "सेटिंग्स",
   "sidebar.theme": "थीम",
   "sidebar.lightMode": "लाइट मोड",

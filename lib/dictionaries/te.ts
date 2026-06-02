@@ -3,6 +3,7 @@ export const te = {
   "sidebar.dashboard": "డ్యాష్‌బోర్డ్",
   "sidebar.newDomain": "కొత్త డొమైన్",
   "sidebar.invitations": "ఆహ్వానాలు",
+  "sidebar.terms": "నియమాలు & నిబంధనలు",
   "sidebar.settings": "సెట్టింగ్‌లు",
   "sidebar.theme": "థీమ్",
   "sidebar.lightMode": "లైట్ మోడ్",

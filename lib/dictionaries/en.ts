@@ -3,6 +3,7 @@ export const en = {
   "sidebar.dashboard": "Dashboard",
   "sidebar.newDomain": "New Domain",
   "sidebar.invitations": "Invitations",
+  "sidebar.terms": "Terms & Conditions",
   "sidebar.settings": "Settings",
   "sidebar.theme": "Theme",
   "sidebar.lightMode": "Light Mode",

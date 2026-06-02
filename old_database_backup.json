@@ -1,0 +1,278 @@
+{
+  "OTP": [
+    {
+      "id": "625b0d0f-35a8-4a3c-a5ba-d722227e1467",
+      "email": "sandeepsamineni800@gmail.com",
+      "code": "795772",
+      "expiresAt": 1778041762683,
+      "createdAt": 1778040862714
+    },
+    {
+      "id": "fc49ede7-3cd6-458f-bce3-bef529083b7b",
+      "email": "sandysamineni3063@gmail.com",
+      "code": "152581",
+      "expiresAt": 1778042045348,
+      "createdAt": 1778041145370
+    }
+  ],
+  "Task": [
+    {
+      "id": "7cbb0e53-ba07-4349-ba32-2955fc35e0ee",
+      "title": "Breakfast",
+      "description": "",
+      "status": "PENDING",
+      "priority": "MEDIUM",
+      "dueDate": 1778198400000,
+      "domainId": "b3580928-40d3-437a-bcc7-cf4d2e80f157",
+      "assigneeId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "creatorId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "createdAt": 1777950194706,
+      "updatedAt": 1777950194706
+    },
+    {
+      "id": "065711a1-6a1e-4317-8919-623466a52d04",
+      "title": "frontend",
+      "description": "NA",
+      "status": "PENDING",
+      "priority": "MEDIUM",
+      "dueDate": 1778112000000,
+      "domainId": "63787e2a-6580-4ddd-b579-3986a760091c",
+      "assigneeId": "c059a7e2-ac82-433e-b4cd-553cbe5c0944",
+      "creatorId": "c059a7e2-ac82-433e-b4cd-553cbe5c0944",
+      "createdAt": 1778037034876,
+      "updatedAt": 1778038890745
+    },
+    {
+      "id": "db842f4b-5a8a-4070-9767-41ca6ae43af4",
+      "title": "backend",
+      "description": "NA",
+      "status": "PENDING",
+      "priority": "MEDIUM",
+      "dueDate": 1780012800000,
+      "domainId": "63787e2a-6580-4ddd-b579-3986a760091c",
+      "assigneeId": "df6ebdc5-5fe3-4481-acda-fd7be254783c",
+      "creatorId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "createdAt": 1778038626749,
+      "updatedAt": 1778038653646
+    }
+  ],
+  "User": [
+    {
+      "id": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "name": "Sandeep",
+      "email": "sandysamineni3063@gmail.com",
+      "password": "$2b$10$GOoteYzW9.xhPYMq0kZYFunHKj23tcUtcks6dXHY3f2GkCHvA/ioq",
+      "createdAt": 1777088213091,
+      "updatedAt": 1777088213091
+    },
+    {
+      "id": "df6ebdc5-5fe3-4481-acda-fd7be254783c",
+      "name": "Ramakoti Reddy",
+      "email": "ramakotireddy2005@gmail.com",
+      "password": "$2b$10$t9lcCAVooGq3LmrCNFTEFu9RDPX9dmpaem7ozoJUGRXrur9DrV236",
+      "createdAt": 1777092790341,
+      "updatedAt": 1777092790341
+    },
+    {
+      "id": "b5699494-9352-4497-8ab0-985aaf5325ab",
+      "name": "x",
+      "email": "test@test.com",
+      "password": "$2b$10$923RrXal58bImkb0HuQ6veow5xzBApykoFEU1fAGkPmo3Skitvwqu",
+      "createdAt": 1777092947872,
+      "updatedAt": 1777092947872
+    },
+    {
+      "id": "c059a7e2-ac82-433e-b4cd-553cbe5c0944",
+      "name": "sandy",
+      "email": "sandeepsamineni800@gmail.com",
+      "password": "$2b$10$9Ao9AZLMcSNoiiBrk/k2geEfY9wybzESop/XpyCNXfIPuFriHEuMO",
+      "createdAt": 1777094036587,
+      "updatedAt": 1777094036587
+    }
+  ],
+  "Domain": [
+    {
+      "id": "47773632-9b25-44bb-b800-5a774ecff48d",
+      "name": "GAme design",
+      "description": "Track bugs, feature requests, and agile sprint tasks for your development team.",
+      "template": "Software Team",
+      "createdAt": 1777871200185,
+      "updatedAt": 1777871200185
+    },
+    {
+      "id": "b3580928-40d3-437a-bcc7-cf4d2e80f157",
+      "name": "Thandalam rooom",
+      "description": "Manage chores, groceries, and shared responsibilities with your roommates.",
+      "template": "Room Core",
+      "createdAt": 1777950169557,
+      "updatedAt": 1777950169557
+    },
+    {
+      "id": "63787e2a-6580-4ddd-b579-3986a760091c",
+      "name": "fullstack design",
+      "description": "Track bugs, feature requests, and agile sprint tasks for your development team.",
+      "template": "Software Team",
+      "createdAt": 1777951205396,
+      "updatedAt": 1777951205396
+    },
+    {
+      "id": "6eb7da64-c72b-497e-a537-868483cbc1ac",
+      "name": "sandeep",
+      "description": "Manage chores, groceries, and shared responsibilities with your roommates.",
+      "template": "Room Core",
+      "createdAt": 1778561178819,
+      "updatedAt": 1778561178819
+    },
+    {
+      "id": "ec4792b2-5589-461e-9d8e-62d701d8dcc9",
+      "name": "fdfg",
+      "description": "Track bugs, feature requests, and agile sprint tasks for your development team.",
+      "template": "Software Team",
+      "createdAt": 1778574188067,
+      "updatedAt": 1778574188067
+    },
+    {
+      "id": "0b3a2501-aef4-46ab-a3af-877427522359",
+      "name": "full stack",
+      "description": "Track bugs, feature requests, and agile sprint tasks for your development team.",
+      "template": "Software Team",
+      "createdAt": 1778644819714,
+      "updatedAt": 1778644819714
+    },
+    {
+      "id": "8c34caf3-8aa8-48df-9407-1dd1397105c0",
+      "name": "Game design",
+      "description": "Track bugs, feature requests, and agile sprint tasks for your development team.",
+      "template": "Software Team",
+      "createdAt": 1778645975835,
+      "updatedAt": 1778645975835
+    },
+    {
+      "id": "3f61f8cf-fb34-49f6-87f3-387d0af86054",
+      "name": "capstone",
+      "description": "capstone for report ppt ",
+      "template": "College Project",
+      "createdAt": 1778647605494,
+      "updatedAt": 1778647605494
+    }
+  ],
+  "DomainMember": [
+    {
+      "id": "1bd82b90-80ca-4eb9-b93f-5ff9db6558a2",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "47773632-9b25-44bb-b800-5a774ecff48d",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1777871200185,
+      "pendingRole": null
+    },
+    {
+      "id": "3eafb51d-f53b-48e4-b815-6d0fd5b0fc53",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "b3580928-40d3-437a-bcc7-cf4d2e80f157",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1777950169557,
+      "pendingRole": null
+    },
+    {
+      "id": "4403f567-4215-4655-aa36-ed261d0b8a10",
+      "userId": "c059a7e2-ac82-433e-b4cd-553cbe5c0944",
+      "domainId": "b3580928-40d3-437a-bcc7-cf4d2e80f157",
+      "role": "MEMBER",
+      "status": "ACCEPTED",
+      "createdAt": 1777950182915,
+      "pendingRole": null
+    },
+    {
+      "id": "6cb62888-660a-43d9-a9fd-151e546dc3af",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "63787e2a-6580-4ddd-b579-3986a760091c",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1777951205396,
+      "pendingRole": null
+    },
+    {
+      "id": "ce0332b3-0b76-451a-a42f-a8a9ca405a0e",
+      "userId": "c059a7e2-ac82-433e-b4cd-553cbe5c0944",
+      "domainId": "63787e2a-6580-4ddd-b579-3986a760091c",
+      "role": "MEMBER",
+      "status": "ACCEPTED",
+      "createdAt": 1777951220509,
+      "pendingRole": null
+    },
+    {
+      "id": "5ce44779-1d89-43f7-bdaf-19803560a042",
+      "userId": "df6ebdc5-5fe3-4481-acda-fd7be254783c",
+      "domainId": "63787e2a-6580-4ddd-b579-3986a760091c",
+      "role": "MEMBER",
+      "status": "ACCEPTED",
+      "createdAt": 1778038578295,
+      "pendingRole": null
+    },
+    {
+      "id": "b4a45371-9dc1-4aad-a7b5-332c852799bb",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "6eb7da64-c72b-497e-a537-868483cbc1ac",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1778561178819,
+      "pendingRole": null
+    },
+    {
+      "id": "0ee832f7-94a6-4c10-ad50-b53de441e163",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "ec4792b2-5589-461e-9d8e-62d701d8dcc9",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1778574188067,
+      "pendingRole": null
+    },
+    {
+      "id": "9e764e8c-03c0-4896-bfdf-c9237e0baf94",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "0b3a2501-aef4-46ab-a3af-877427522359",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1778644819714,
+      "pendingRole": null
+    },
+    {
+      "id": "9d92aa37-1054-47f0-91fd-5c37a23f4054",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "8c34caf3-8aa8-48df-9407-1dd1397105c0",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1778645975835,
+      "pendingRole": null
+    },
+    {
+      "id": "45e9fda3-d88c-4fc0-a1c8-4fc642e55f34",
+      "userId": "c059a7e2-ac82-433e-b4cd-553cbe5c0944",
+      "domainId": "8c34caf3-8aa8-48df-9407-1dd1397105c0",
+      "role": "SUB_ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1778646003515,
+      "pendingRole": null
+    },
+    {
+      "id": "b905c117-619f-42e6-b4fa-8a9812ec18a9",
+      "userId": "10dab27b-edf8-4bb3-918b-6be162fcd9b1",
+      "domainId": "3f61f8cf-fb34-49f6-87f3-387d0af86054",
+      "role": "ADMIN",
+      "status": "ACCEPTED",
+      "createdAt": 1778647605494,
+      "pendingRole": null
+    },
+    {
+      "id": "56715335-1a98-4baa-9183-df85a6860f4e",
+      "userId": "df6ebdc5-5fe3-4481-acda-fd7be254783c",
+      "domainId": "8c34caf3-8aa8-48df-9407-1dd1397105c0",
+      "role": "MEMBER",
+      "status": "PENDING",
+      "createdAt": 1778648831319,
+      "pendingRole": null
+    }
+  ]
+}
