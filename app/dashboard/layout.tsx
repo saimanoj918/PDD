@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { LayoutDashboard, Users, LogOut, Loader2, PlusCircle, Settings, Moon, Sun, Menu, Mail, Type, FileText } from 'lucide-react';
+import { LayoutDashboard, Users, LogOut, Loader2, PlusCircle, Settings, Moon, Sun, Menu, Mail, Type, FileText, ArrowUp } from 'lucide-react';
 import { useLanguage } from '@/lib/i18nContext';
 import styles from './layout.module.css';
 
@@ -16,6 +16,20 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [invitationsCount, setInvitationsCount] = useState(0);
   const { language, setLanguage, t } = useLanguage();
+  const mainContentRef = useRef<HTMLDivElement>(null);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  const handleScroll = () => {
+    if (mainContentRef.current) {
+      setShowScrollTop(mainContentRef.current.scrollTop > 200);
+    }
+  };
+
+  const scrollToTop = () => {
+    if (mainContentRef.current) {
+      mainContentRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
   
   const router = useRouter();
   const pathname = usePathname();
@@ -246,7 +260,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         </div>
       </aside>
       
-      <main className={styles.mainContent}>
+      <main className={styles.mainContent} ref={mainContentRef} onScroll={handleScroll}>
         <div className={styles.topbar}>
           <h1 className={styles.pageTitle}>{t('sidebar.overview')}</h1>
           
@@ -255,6 +269,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className={styles.contentArea}>
           {children}
         </div>
+        {showScrollTop && (
+          <button onClick={scrollToTop} className={styles.scrollTopBtn} aria-label="Scroll to top">
+            <ArrowUp size={24} />
+          </button>
+        )}
       </main>
     </div>
   );
