@@ -86,6 +86,10 @@ export default function Onboarding() {
   return (
     <div className={styles.container}>
 
+      <button onClick={finishOnboarding} className={styles.skipButtonTopRight}>
+        Skip
+      </button>
+
       <div className={styles.slidesContainer}>
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <motion.div
@@ -152,12 +156,6 @@ export default function Onboarding() {
               Next <ArrowRight size={20} />
             </>
           )}
-        </button>
-      </div>
-
-      <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: 'calc(2rem + env(safe-area-inset-bottom, 0px))' }}>
-        <button onClick={finishOnboarding} className={styles.skipButtonBottom}>
-          Skip Onboarding
         </button>
       </div>
     </div>
