@@ -75,11 +75,16 @@ export default function Login() {
         body: JSON.stringify({ email }),
       });
 
+      const data = await res.json();
+
       if (res.ok) {
         setMode('reset_password');
-        setSuccess('If an account exists, a 6-digit verification code has been sent to your email.');
+        if (data.devOtp) {
+          setSuccess(`[TEST MODE] If an account exists, your verification code is: ${data.devOtp}`);
+        } else {
+          setSuccess('If an account exists, a 6-digit verification code has been sent to your email.');
+        }
       } else {
-        const data = await res.json();
         setError(data.error || 'Failed to process request');
       }
     } catch (err) {
