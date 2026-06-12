@@ -62,7 +62,8 @@ export default function Register() {
       });
 
       if (res.ok) {
-        router.push('/dashboard');
+        // Redirect to login after successful signup
+        router.push('/login?registered=true');
         router.refresh();
       } else {
         const data = await res.json();

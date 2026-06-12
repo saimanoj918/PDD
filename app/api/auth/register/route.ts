@@ -44,21 +44,10 @@ export async function POST(request: Request) {
       },
     });
 
-    const token = signToken({ id: user.id, email: user.email });
-
     const response = NextResponse.json({ 
-      user: { id: user.id, name: user.name, email: user.email } 
+      user: { id: user.id, name: user.name, email: user.email },
+      message: 'Account created successfully'
     }, { status: 201 });
-
-    response.cookies.set({
-      name: 'auth-token',
-      value: token,
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'strict',
-      maxAge: 60 * 60 * 24 * 7, // 1 week
-      path: '/',
-    });
 
     return response;
   } catch (error) {
