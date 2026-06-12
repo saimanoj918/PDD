@@ -11,19 +11,34 @@ const slides = [
     id: 1,
     title: 'Organize Your Life',
     description: 'Create dedicated workspaces and domains for every aspect of your life or project.',
-    icon: Layers
+    icon: Layers,
+    bgGradient: 'radial-gradient(circle at top left, rgba(99, 102, 241, 0.15), transparent 40%), radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.1), transparent 40%)',
+    orbOne: 'rgba(99, 102, 241, 0.4)',
+    orbTwo: 'rgba(236, 72, 153, 0.3)',
+    iconBg: 'linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(236, 72, 153, 0.1))',
+    iconColor: '#6366f1'
   },
   {
     id: 2,
     title: 'Collaborate Seamlessly',
     description: 'Invite members, assign tasks, and track real-time progress together as a team.',
-    icon: Users
+    icon: Users,
+    bgGradient: 'radial-gradient(circle at top right, rgba(16, 185, 129, 0.15), transparent 40%), radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.1), transparent 40%)',
+    orbOne: 'rgba(16, 185, 129, 0.4)',
+    orbTwo: 'rgba(14, 165, 233, 0.3)',
+    iconBg: 'linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(14, 165, 233, 0.1))',
+    iconColor: '#10b981'
   },
   {
     id: 3,
     title: 'Track Your Progress',
     description: 'Beautiful visual dashboards help you stay on top of your goals and deadlines.',
-    icon: BarChart3
+    icon: BarChart3,
+    bgGradient: 'radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.15), transparent 40%), radial-gradient(circle at top left, rgba(239, 68, 68, 0.1), transparent 40%)',
+    orbOne: 'rgba(245, 158, 11, 0.4)',
+    orbTwo: 'rgba(239, 68, 68, 0.3)',
+    iconBg: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.1))',
+    iconColor: '#f59e0b'
   }
 ];
 
@@ -83,7 +98,14 @@ export default function Onboarding() {
   const CurrentIcon = slides[currentSlide].icon;
 
   return (
-    <div className={styles.container}>
+    <div 
+      className={styles.container}
+      style={{
+        background: `var(--bg-main)`,
+        backgroundImage: slides[currentSlide].bgGradient,
+        transition: 'background-image 0.5s ease-in-out'
+      }}
+    >
 
       {currentSlide < slides.length - 1 && (
         <button onClick={finishOnboarding} className={styles.skipButtonTopRight}>
@@ -112,8 +134,13 @@ export default function Onboarding() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.3 }}
               className={styles.iconContainer}
+              style={{
+                background: slides[currentSlide].iconBg,
+                borderColor: slides[currentSlide].orbOne,
+                boxShadow: `0 0 40px ${slides[currentSlide].orbTwo}`
+              }}
             >
-              <CurrentIcon size={48} className={styles.icon} />
+              <CurrentIcon size={48} color={slides[currentSlide].iconColor} />
             </motion.div>
             
             <motion.h1 
@@ -143,11 +170,19 @@ export default function Onboarding() {
             <div 
               key={index} 
               className={`${styles.dot} ${index === currentSlide ? styles.dotActive : ''}`}
+              style={index === currentSlide ? { background: slides[currentSlide].iconColor } : {}}
             />
           ))}
         </div>
 
-        <button onClick={nextSlide} className={styles.nextButton}>
+        <button 
+          onClick={nextSlide} 
+          className={styles.nextButton}
+          style={{
+            background: slides[currentSlide].iconColor,
+            boxShadow: `0 4px 15px ${slides[currentSlide].orbTwo}`
+          }}
+        >
           {currentSlide === slides.length - 1 ? (
             <>
               Get Started <CheckCircle2 size={20} />
