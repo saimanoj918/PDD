@@ -265,7 +265,7 @@ export default function Login() {
               
               <button 
                 type="button" 
-                onClick={() => { setMode('login'); setSuccess(''); setError(''); }} 
+                onClick={() => { setMode('login'); setSuccess(''); setError(''); setOtp(''); setNewPassword(''); }} 
                 className={`btn-secondary ${styles.submitBtn}`} 
                 style={{ marginTop: '0.5rem' }}
               >
