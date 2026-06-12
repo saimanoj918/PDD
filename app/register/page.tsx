@@ -33,7 +33,11 @@ export default function Register() {
       const data = await res.json();
 
       if (res.ok) {
-        setMessage('A verification code has been sent to your email.');
+        if (data.devOtp) {
+          setMessage(`[TEST MODE] Your verification code is: ${data.devOtp}`);
+        } else {
+          setMessage('A verification code has been sent to your email.');
+        }
         setStep(2);
       } else {
         setError(data.error || 'Failed to send verification code');
