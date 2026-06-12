@@ -92,62 +92,51 @@ export default function Register() {
     <div className={styles.authContainer}>
       <AnimatedBackground />
       <div className={`${styles.authBox} glass-panel animate-fade-in`}>
-        <h1 className={styles.title}>
-          {step === 1 ? 'Create Account' : 'Verify Email'}
-        </h1>
-        <p className={styles.subtitle}>
-          {step === 1 ? 'Start managing your domains today' : `We sent a code to ${email}`}
-        </p>
+        <h1 className={styles.title}>Create Account</h1>
+        <p className={styles.subtitle}>Start managing your domains today</p>
 
         {error && <div className={styles.error}>{error}</div>}
         {message && <div style={{ color: '#10b981', marginBottom: '1rem', textAlign: 'center', fontSize: '0.9rem' }}>{message}</div>}
 
-        {step === 1 ? (
-          <form onSubmit={handleSendOtp} className={styles.form}>
-            <div className="input-group">
-              <label className="input-label" htmlFor="name">Full Name</label>
-              <input
-                id="name"
-                type="text"
-                className="input-field"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </div>
+        <form onSubmit={handleVerifyAndRegister} className={styles.form}>
+          <div className="input-group">
+            <label className="input-label" htmlFor="name">Full Name</label>
+            <input
+              id="name"
+              type="text"
+              className="input-field"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
 
-            <div className="input-group">
-              <label className="input-label" htmlFor="email">Email</label>
-              <input
-                id="email"
-                type="email"
-                className="input-field"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
+          <div className="input-group">
+            <label className="input-label" htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              className="input-field"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            {step === 1 && (
+              <button 
+                type="button" 
+                onClick={handleSendOtp} 
+                className={`btn-secondary ${styles.submitBtn}`} 
+                style={{ marginTop: '0.5rem', padding: '0.5rem' }}
+                disabled={loading || !email}
+              >
+                {loading ? 'Sending...' : 'Verify Email'}
+              </button>
+            )}
+          </div>
 
-            <div className="input-group">
-              <label className="input-label" htmlFor="password">Password</label>
-              <input
-                id="password"
-                type="password"
-                className="input-field"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
-
-            <button type="submit" className={`btn-primary ${styles.submitBtn}`} disabled={loading}>
-              {loading ? 'Sending Code...' : 'Next'}
-            </button>
-          </form>
-        ) : (
-          <form onSubmit={handleVerifyAndRegister} className={styles.form}>
-            <div className="input-group">
-              <label className="input-label" htmlFor="otp">Verification Code</label>
+          {step === 2 && (
+            <div className="input-group animate-fade-in" style={{ padding: '1rem', background: 'rgba(16, 185, 129, 0.05)', borderRadius: '8px', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
+              <label className="input-label" htmlFor="otp" style={{ color: 'var(--success)' }}>Verification Code</label>
               <input
                 id="otp"
                 type="text"
@@ -159,47 +148,46 @@ export default function Register() {
                 required
                 style={{ textAlign: 'center', letterSpacing: '0.25rem', fontSize: '1.25rem', fontWeight: 'bold' }}
               />
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
+                <button 
+                  type="button" 
+                  onClick={() => handleSendOtp()} 
+                  disabled={resendTimer > 0 || loading}
+                  className={styles.link} 
+                  style={{ background: 'none', border: 'none', cursor: resendTimer > 0 ? 'not-allowed' : 'pointer', fontSize: '0.8rem', opacity: resendTimer > 0 ? 0.5 : 1 }}
+                >
+                  {resendTimer > 0 ? `Resend in ${resendTimer}s` : 'Resend Code'}
+                </button>
+              </div>
             </div>
+          )}
 
-            <button type="submit" className={`btn-primary ${styles.submitBtn}`} disabled={loading}>
-              {loading ? 'Verifying...' : 'Verify & Sign Up'}
-            </button>
-            
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem', width: '100%' }}>
-              <button 
-                type="button" 
-                onClick={() => setStep(1)} 
-                className={styles.link} 
-                style={{ background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-              >
-                Back to start
-              </button>
-              
-              <button 
-                type="button" 
-                onClick={() => handleSendOtp()} 
-                disabled={resendTimer > 0 || loading}
-                className={styles.link} 
-                style={{ 
-                  background: 'none', 
-                  border: 'none', 
-                  cursor: resendTimer > 0 ? 'not-allowed' : 'pointer', 
-                  textAlign: 'right',
-                  opacity: resendTimer > 0 ? 0.5 : 1
-                }}
-              >
-                {resendTimer > 0 ? `Resend in ${resendTimer}s` : 'Resend Code'}
-              </button>
-            </div>
-          </form>
-        )}
-
-        {step === 1 && (
-          <div className={styles.footer}>
-            Already have an account? 
-            <Link href="/login" className={styles.link}>Sign in</Link>
+          <div className="input-group">
+            <label className="input-label" htmlFor="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              className="input-field"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
           </div>
-        )}
+
+          <button 
+            type="submit" 
+            className={`btn-primary ${styles.submitBtn}`} 
+            disabled={loading || step === 1}
+            style={{ opacity: step === 1 ? 0.5 : 1 }}
+          >
+            {step === 1 ? 'Verify Email to Continue' : (loading ? 'Creating Account...' : 'Verify & Sign Up')}
+          </button>
+        </form>
+
+        <div className={styles.footer}>
+          Already have an account? 
+          <Link href="/login" className={styles.link}>Sign in</Link>
+        </div>
       </div>
     </div>
   );
