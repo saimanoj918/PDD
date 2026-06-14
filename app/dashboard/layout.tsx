@@ -75,6 +75,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
+    setIsMobileMenuOpen(false);
   };
 
   const changeLanguage = (newLang: string) => {
@@ -82,10 +83,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     if (newLang === 'Telugu') langCode = 'te';
     if (newLang === 'Hindi') langCode = 'hi';
     setLanguage(langCode);
+    setIsMobileMenuOpen(false);
   };
 
   const handleLogout = async () => {
     await fetch('/api/auth/logout', { method: 'POST' });
+    setIsMobileMenuOpen(false);
     router.push('/login');
   };
 
@@ -113,6 +116,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <Link 
             href="/dashboard" 
             className={`${styles.navItem} ${pathname === '/dashboard' ? styles.active : ''}`}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <LayoutDashboard size={20} />
             <span>{t('sidebar.dashboard')}</span>
@@ -120,6 +124,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <Link 
             href="/dashboard/domains/new" 
             className={`${styles.navItem} ${pathname === '/dashboard/domains/new' ? styles.active : ''}`}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <PlusCircle size={20} />
             <span>{t('sidebar.newDomain')}</span>
@@ -128,6 +133,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <Link 
             href="/dashboard/domains/create" 
             className={`${styles.navItem} ${pathname === '/dashboard/domains/create' ? styles.active : ''}`}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <PlusCircle size={20} />
             <span>Create Domain</span>
@@ -137,6 +143,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             href="/dashboard/invitations" 
             className={`${styles.navItem} ${pathname === '/dashboard/invitations' ? styles.active : ''}`}
             style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
               <Mail size={20} />
@@ -158,6 +165,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <Link 
             href="/dashboard/progress" 
             className={`${styles.navItem} ${pathname === '/dashboard/progress' ? styles.active : ''}`}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <BarChart size={20} />
             <span>{t('sidebar.progress')}</span>
@@ -165,6 +173,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <Link 
             href="/dashboard/terms" 
             className={`${styles.navItem} ${pathname === '/dashboard/terms' ? styles.active : ''}`}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <FileText size={20} />
             <span>{t('sidebar.terms')}</span>
@@ -202,21 +211,21 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', padding: '0.5rem 1rem', marginTop: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>{t('sidebar.fontSize')}</div>
                 <button 
-                  onClick={() => setFontSize('small')} 
+                  onClick={() => { setFontSize('small'); setIsMobileMenuOpen(false); }} 
                   className={`${styles.navItem} ${fontSize === 'small' ? styles.active : ''}`}
                   style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
                 >
                   <Type size={14} /> {t('sidebar.fontSmall')}
                 </button>
                 <button 
-                  onClick={() => setFontSize('medium')} 
+                  onClick={() => { setFontSize('medium'); setIsMobileMenuOpen(false); }} 
                   className={`${styles.navItem} ${fontSize === 'medium' ? styles.active : ''}`}
                   style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
                 >
                   <Type size={16} /> {t('sidebar.fontMedium')}
                 </button>
                 <button 
-                  onClick={() => setFontSize('large')} 
+                  onClick={() => { setFontSize('large'); setIsMobileMenuOpen(false); }} 
                   className={`${styles.navItem} ${fontSize === 'large' ? styles.active : ''}`}
                   style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
                 >
