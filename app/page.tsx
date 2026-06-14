@@ -70,6 +70,13 @@ export default function Onboarding() {
     router.push('/login');
   };
 
+  const prevSlide = () => {
+    if (currentSlide > 0) {
+      setDirection(-1);
+      setCurrentSlide(prev => prev - 1);
+    }
+  };
+
   const nextSlide = () => {
     if (currentSlide === slides.length - 1) {
       finishOnboarding();
@@ -132,6 +139,16 @@ export default function Onboarding() {
               x: { type: "spring", stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
               scale: { duration: 0.2 }
+            }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={1}
+            onDragEnd={(e, { offset }) => {
+              if (offset.x < -50) {
+                nextSlide();
+              } else if (offset.x > 50) {
+                prevSlide();
+              }
             }}
             className={styles.slide}
           >
