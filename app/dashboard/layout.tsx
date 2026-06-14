@@ -103,10 +103,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <div className={styles.layout}>
       <aside className={`${styles.sidebar} glass-panel`}>
         <div className={styles.sidebarHeader}>
-          <h2>Core Scheduler</h2>
           <button className={styles.mobileMenuBtn} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             <Menu size={24} />
           </button>
+          <h2>Core Scheduler</h2>
         </div>
         
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileOpen : ''}`}>
