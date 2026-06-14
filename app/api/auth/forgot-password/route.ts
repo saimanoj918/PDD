@@ -77,8 +77,8 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Forgot password error:', error);
-    return NextResponse.json({ error: 'Failed to process request' }, { status: 500 });
+    return NextResponse.json({ error: error?.message || 'Failed to process request' }, { status: 500 });
   }
 }

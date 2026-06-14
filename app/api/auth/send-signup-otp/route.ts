@@ -84,8 +84,8 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ success: true, message: 'Verification code sent successfully' });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Send signup OTP error:', error);
-    return NextResponse.json({ error: 'Failed to send verification code' }, { status: 500 });
+    return NextResponse.json({ error: error?.message || 'Failed to send verification code' }, { status: 500 });
   }
 }
