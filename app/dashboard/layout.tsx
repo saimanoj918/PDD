@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { LayoutDashboard, Users, LogOut, Loader2, PlusCircle, Settings, Moon, Sun, Menu, Mail, Type, FileText, ArrowUp, BarChart } from 'lucide-react';
+import { LayoutDashboard, Users, LogOut, Loader2, PlusCircle, Settings, Moon, Sun, Menu, Mail, Type, FileText, ArrowUp, BarChart, User } from 'lucide-react';
 import { useLanguage } from '@/lib/i18nContext';
 import { useFontSize } from '@/lib/FontSizeContext';
 import styles from './layout.module.css';
@@ -179,6 +179,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           >
             <FileText size={20} />
             <span>{t('sidebar.terms')}</span>
+          </Link>
+          <Link 
+            href="/dashboard/profile" 
+            className={`${styles.navItem} ${pathname === '/dashboard/profile' ? styles.active : ''}`}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <User size={20} />
+            <span>Profile</span>
           </Link>
 
         </nav>
