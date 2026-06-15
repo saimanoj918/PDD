@@ -64,6 +64,17 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
     fetchData();
   }, [domainId]);
 
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest(`.${styles.menuContainer}`)) {
+        setOpenMenuId(null);
+      }
+    };
+    document.addEventListener('click', handleOutsideClick);
+    return () => document.removeEventListener('click', handleOutsideClick);
+  }, []);
+
   const fetchData = async () => {
     try {
       const [tasksRes, membersRes, domainsRes, meRes] = await Promise.all([
@@ -282,6 +293,23 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
       });
       if (res.ok) {
         fetchData();
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const handleRemoveMember = async (memberId: string) => {
+    if (!confirm('Are you sure you want to remove this member? This will remove them from the domain, delete all their assigned tasks, and send them a notification.')) return;
+    try {
+      const res = await fetch(`/api/domains/${domainId}/members/${memberId}`, {
+        method: 'DELETE',
+      });
+      if (res.ok) {
+        fetchData();
+      } else {
+        const data = await res.json();
+        alert(data.error || 'Failed to remove member');
       }
     } catch (err) {
       console.error(err);
@@ -630,32 +658,62 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
                         )}
                       </div>
                     </div>
-                    {isAdmin && allowsSubAdmin && member.role !== 'ADMIN' && (
-                      <div style={{ marginLeft: 'auto' }}>
-                        {member.role === 'SUB_ADMIN' ? (
-                          <button 
-                            className="btn-secondary" 
-                            style={{ padding: '0.25rem 0.5rem', fontSize: '0.75rem' }}
-                            onClick={() => handleUpdateRole(member.id, 'MEMBER')}
-                          >
-                            Demote
-                          </button>
-                        ) : member.pendingRole === 'SUB_ADMIN' ? (
-                          <button 
-                            className="btn-secondary" 
-                            style={{ padding: '0.25rem 0.5rem', fontSize: '0.75rem', opacity: 0.6, cursor: 'not-allowed' }}
-                            disabled
-                          >
-                            Invited as Sub-Admin
-                          </button>
-                        ) : (
-                          <button 
-                            className="btn-primary" 
-                            style={{ padding: '0.25rem 0.5rem', fontSize: '0.75rem' }}
-                            onClick={() => handleUpdateRole(member.id, 'SUB_ADMIN')}
-                          >
-                            Make Sub-Admin
-                          </button>
+                    {((isAdmin && member.role !== 'ADMIN') || (isSubAdmin && member.role === 'MEMBER')) && (
+                      <div className={styles.menuContainer}>
+                        <button 
+                          className={styles.menuButton} 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setOpenMenuId(openMenuId === member.id ? null : member.id);
+                          }}
+                          title="Member Options"
+                        >
+                          <MoreVertical size={16} />
+                        </button>
+                        {openMenuId === member.id && (
+                          <div className={styles.dropdownMenu} onClick={(e) => e.stopPropagation()}>
+                            {isAdmin && allowsSubAdmin && (
+                              <>
+                                {member.role === 'SUB_ADMIN' ? (
+                                  <button 
+                                    className={styles.menuItem} 
+                                    onClick={() => {
+                                      handleUpdateRole(member.id, 'MEMBER');
+                                      setOpenMenuId(null);
+                                    }}
+                                  >
+                                    Change Subadmin
+                                  </button>
+                                ) : member.pendingRole === 'SUB_ADMIN' ? (
+                                  <button 
+                                    className={`${styles.menuItem} ${styles.menuItemDisabled}`}
+                                    disabled
+                                  >
+                                    Invited as Sub-Admin
+                                  </button>
+                                ) : (
+                                  <button 
+                                    className={styles.menuItem} 
+                                    onClick={() => {
+                                      handleUpdateRole(member.id, 'SUB_ADMIN');
+                                      setOpenMenuId(null);
+                                    }}
+                                  >
+                                    Make Sub-Admin
+                                  </button>
+                                )}
+                              </>
+                            )}
+                            <button 
+                              className={`${styles.menuItem} ${styles.menuItemDanger}`}
+                              onClick={() => {
+                                handleRemoveMember(member.id);
+                                setOpenMenuId(null);
+                              }}
+                            >
+                              Remove
+                            </button>
+                          </div>
                         )}
                       </div>
                     )}
