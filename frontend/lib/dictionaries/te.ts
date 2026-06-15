@@ -2,7 +2,7 @@ export const te = {
   // Sidebar
   "sidebar.dashboard": "డ్యాష్‌బోర్డ్",
   "sidebar.newDomain": "కొత్త డొమైన్",
-  "sidebar.invitations": "ఆహ్వానాలు",
+  "sidebar.invitations": "సందేశాలు",
   "sidebar.progress": "పురోగతి",
   "sidebar.terms": "నియమాలు & నిబంధనలు",
   "sidebar.settings": "సెట్టింగ్‌లు",
@@ -71,8 +71,8 @@ export const te = {
   "member.makeAdmin": "అడ్మిన్‌గా చేయండి",
   "member.makeSubAdmin": "సబ్-అడ్మిన్‌గా చేయండి",
   "member.remove": "తొలగించండి",
-  "invitations.title": "ఆహ్వానాలు",
-  "invitations.noPending": "పెండింగ్ ఆహ్వానాలు లేవు.",
+  "invitations.title": "సందేశాలు",
+  "invitations.noPending": "పెండింగ్ సందేశాలు లేవు.",
   "invitations.accept": "అంగీకరించండి",
   "invitations.reject": "తిరస్కరించండి",
 };

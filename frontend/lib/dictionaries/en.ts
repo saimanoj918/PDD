@@ -2,7 +2,7 @@ export const en = {
   // Sidebar
   "sidebar.dashboard": "Dashboard",
   "sidebar.newDomain": "New Domain",
-  "sidebar.invitations": "Invitations",
+  "sidebar.invitations": "Messages",
   "sidebar.progress": "Progress",
   "sidebar.terms": "Terms & Conditions",
   "sidebar.settings": "Settings",
@@ -71,8 +71,8 @@ export const en = {
   "member.makeAdmin": "Make Admin",
   "member.makeSubAdmin": "Make Sub-Admin",
   "member.remove": "Remove",
-  "invitations.title": "Invitations",
-  "invitations.noPending": "No pending invitations.",
+  "invitations.title": "Messages",
+  "invitations.noPending": "No pending messages.",
   "invitations.accept": "Accept",
   "invitations.reject": "Reject",
 };

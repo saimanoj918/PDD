@@ -2,7 +2,7 @@ export const en = {
   // Sidebar
   "sidebar.dashboard": "Dashboard",
   "sidebar.newDomain": "New Domain",
-  "sidebar.invitations": "Invitations",
+  "sidebar.invitations": "Messages",
   "sidebar.progress": "Progress",
   "sidebar.terms": "Terms & Conditions",
   "sidebar.settings": "Settings",

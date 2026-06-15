@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { LayoutDashboard, Users, LogOut, Loader2, PlusCircle, Settings, Moon, Sun, Menu, Mail, Type, FileText, ArrowUp, BarChart } from 'lucide-react';
+import { LayoutDashboard, Users, LogOut, Loader2, PlusCircle, Settings, Moon, Sun, Menu, Mail, Type, FileText, ArrowUp, BarChart, MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/lib/i18nContext';
 import { useFontSize } from '@/lib/FontSizeContext';
 import styles from './layout.module.css';
@@ -148,7 +148,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <Mail size={20} />
+              <MessageSquare size={20} />
               <span>{t('sidebar.invitations')}</span>
             </div>
             {invitationsCount > 0 && (

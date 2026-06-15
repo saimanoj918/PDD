@@ -2,7 +2,7 @@ export const hi = {
   // Sidebar
   "sidebar.dashboard": "डैशबोर्ड",
   "sidebar.newDomain": "नया डोमेन",
-  "sidebar.invitations": "निमंत्रण",
+  "sidebar.invitations": "संदेश",
   "sidebar.progress": "प्रगति",
   "sidebar.terms": "नियम और शर्तें",
   "sidebar.settings": "सेटिंग्स",
@@ -71,8 +71,8 @@ export const hi = {
   "member.makeAdmin": "एडमिन बनाएँ",
   "member.makeSubAdmin": "सब-एडमिन बनाएँ",
   "member.remove": "हटाएं",
-  "invitations.title": "निमंत्रण",
-  "invitations.noPending": "कोई लंबित निमंत्रण नहीं।",
+  "invitations.title": "संदेश",
+  "invitations.noPending": "कोई लंबित संदेश नहीं।",
   "invitations.accept": "स्वीकार करें",
   "invitations.reject": "अस्वीकार करें",
 };

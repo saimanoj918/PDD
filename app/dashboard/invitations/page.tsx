@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Mail, Check, X, Loader2 } from 'lucide-react';
+import { MessageSquare, Check, X, Loader2 } from 'lucide-react';
 import styles from './page.module.css';
 
 export default function InvitationsPage() {
@@ -67,14 +67,14 @@ export default function InvitationsPage() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2>Pending Invitations</h2>
-        <p>You have been invited to join the following domains.</p>
+        <h2>Pending Messages</h2>
+        <p>You have received messages to join the following domains.</p>
       </div>
 
       {invitations.length === 0 ? (
         <div className={`${styles.emptyState} glass-panel`}>
-          <Mail size={48} style={{ marginBottom: '1rem', opacity: 0.5 }} />
-          <h3>No Pending Invitations</h3>
+          <MessageSquare size={48} style={{ marginBottom: '1rem', opacity: 0.5 }} />
+          <h3>No Pending Messages</h3>
           <p>You're all caught up!</p>
         </div>
       ) : (
