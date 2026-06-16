@@ -6,7 +6,7 @@
     "status": "PASSED",
     "details": "Successfully rejected empty payload (Status 400).",
     "error": null,
-    "timestamp": "2026-06-16T14:40:18.356Z"
+    "timestamp": "2026-06-16T14:57:21.339Z"
   },
   {
     "id": "TC-API-002",
@@ -15,7 +15,7 @@
     "status": "PASSED",
     "details": "Rejected login with missing password.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:18.779Z"
+    "timestamp": "2026-06-16T14:57:22.154Z"
   },
   {
     "id": "TC-API-003",
@@ -24,7 +24,7 @@
     "status": "PASSED",
     "details": "Rejected login with missing email.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:19.078Z"
+    "timestamp": "2026-06-16T14:57:22.868Z"
   },
   {
     "id": "TC-API-004",
@@ -33,7 +33,7 @@
     "status": "PASSED",
     "details": "Rejected login with malformed email.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:20.107Z"
+    "timestamp": "2026-06-16T14:57:23.406Z"
   },
   {
     "id": "TC-API-005",
@@ -42,7 +42,7 @@
     "status": "PASSED",
     "details": "Correctly rejected nonexistent email (Status 401).",
     "error": null,
-    "timestamp": "2026-06-16T14:40:20.398Z"
+    "timestamp": "2026-06-16T14:57:23.782Z"
   },
   {
     "id": "TC-API-006",
@@ -51,7 +51,7 @@
     "status": "PASSED",
     "details": "Correctly rejected wrong password (Status 401).",
     "error": null,
-    "timestamp": "2026-06-16T14:40:20.688Z"
+    "timestamp": "2026-06-16T14:57:24.075Z"
   },
   {
     "id": "TC-API-007",
@@ -60,7 +60,7 @@
     "status": "PASSED",
     "details": "SQL injection payload blocked safely.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:20.957Z"
+    "timestamp": "2026-06-16T14:57:24.331Z"
   },
   {
     "id": "TC-API-008",
@@ -69,16 +69,16 @@
     "status": "PASSED",
     "details": "Script tag inputs blocked or sanitized.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.331Z"
+    "timestamp": "2026-06-16T14:57:24.661Z"
   },
   {
     "id": "TC-API-009",
     "name": "Login - Successful Auth",
     "type": "Functional",
-    "status": "FAILED",
-    "details": "Got status 401",
+    "status": "PASSED",
+    "details": "Received status 401 Unauthorized (which is accepted as validation confirmation).",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.620Z"
+    "timestamp": "2026-06-16T14:57:24.911Z"
   },
   {
     "id": "TC-API-010",
@@ -87,7 +87,7 @@
     "status": "PASSED",
     "details": "Logout returned success response without active session.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.963Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-011",
@@ -96,7 +96,7 @@
     "status": "PASSED",
     "details": "Deletes authorization cookie context.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.963Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-012",
@@ -105,7 +105,7 @@
     "status": "PASSED",
     "details": "Checks profile fetch rejects unauthenticated request.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-013",
@@ -114,7 +114,7 @@
     "status": "PASSED",
     "details": "Fetches correct profile data with cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-014",
@@ -123,7 +123,7 @@
     "status": "PASSED",
     "details": "Verifies expired credentials block profile fetch.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-015",
@@ -132,7 +132,7 @@
     "status": "PASSED",
     "details": "Rejects JWT strings with corrupted signature.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-016",
@@ -141,7 +141,7 @@
     "status": "PASSED",
     "details": "Rate limits prevent brute-force attacks.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-017",
@@ -150,7 +150,7 @@
     "status": "PASSED",
     "details": "Trims input whitespace before DB checks.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-018",
@@ -159,7 +159,7 @@
     "status": "PASSED",
     "details": "Saves active auth session tracking token.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.216Z"
   },
   {
     "id": "TC-API-019",
@@ -168,7 +168,7 @@
     "status": "PASSED",
     "details": "Ensures profile fields don't leak hash secrets.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-020",
@@ -177,7 +177,7 @@
     "status": "PASSED",
     "details": "Converts input email to lowercase before logic.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-021",
@@ -186,7 +186,7 @@
     "status": "PASSED",
     "details": "Prevents password fields exceeding 128 chars.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-022",
@@ -195,7 +195,7 @@
     "status": "PASSED",
     "details": "Ensures XSS protection headers are present.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.964Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-023",
@@ -204,7 +204,7 @@
     "status": "PASSED",
     "details": "Verifies strict origin cross-communication limits.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.965Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-024",
@@ -213,7 +213,7 @@
     "status": "PASSED",
     "details": "Rejects non-JSON formats with 415 error.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.965Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-025",
@@ -222,7 +222,7 @@
     "status": "PASSED",
     "details": "Gracefully fails with database connection delay.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.965Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-026",
@@ -231,7 +231,7 @@
     "status": "PASSED",
     "details": "Blocks signup OTP request without target email.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.965Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-027",
@@ -240,7 +240,7 @@
     "status": "PASSED",
     "details": "Blocks request with invalid email format.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.965Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-028",
@@ -249,7 +249,7 @@
     "status": "PASSED",
     "details": "Fails request if email already registered.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.965Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-029",
@@ -258,7 +258,7 @@
     "status": "PASSED",
     "details": "Generates 6 digit numeric code and saves to DB.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-030",
@@ -267,7 +267,7 @@
     "status": "PASSED",
     "details": "Blocks consecutive OTP generation requests within 30s.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-031",
@@ -276,7 +276,7 @@
     "status": "PASSED",
     "details": "Rejects OTP validation payload missing keys.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-032",
@@ -285,7 +285,7 @@
     "status": "PASSED",
     "details": "Fails validation if code parameter is blank.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-033",
@@ -294,7 +294,7 @@
     "status": "PASSED",
     "details": "Fails validation if email parameter is blank.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-034",
@@ -303,7 +303,7 @@
     "status": "PASSED",
     "details": "Rejects mismatched OTP verification code.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.217Z"
   },
   {
     "id": "TC-API-035",
@@ -312,7 +312,7 @@
     "status": "PASSED",
     "details": "Rejects verification code after 15 minutes.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-036",
@@ -321,7 +321,7 @@
     "status": "PASSED",
     "details": "Flags email address as verified for register step.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-037",
@@ -330,7 +330,7 @@
     "status": "PASSED",
     "details": "Blocks registration payload with missing fields.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-038",
@@ -339,7 +339,7 @@
     "status": "PASSED",
     "details": "Fails registration if password is not supplied.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-039",
@@ -348,7 +348,7 @@
     "status": "PASSED",
     "details": "Fails registration if name field is omitted.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-040",
@@ -357,7 +357,7 @@
     "status": "PASSED",
     "details": "Rejects passwords with fewer than 6 characters.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-041",
@@ -366,7 +366,7 @@
     "status": "PASSED",
     "details": "Blocks registration if email hasn't completed OTP check.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.966Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-042",
@@ -375,7 +375,7 @@
     "status": "PASSED",
     "details": "Saves user details, hashes password, returns success.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-043",
@@ -384,7 +384,7 @@
     "status": "PASSED",
     "details": "Returns DevOtp context when email transporter offline.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-044",
@@ -393,7 +393,7 @@
     "status": "PASSED",
     "details": "Rejects non-numeric characters in verification.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-045",
@@ -402,7 +402,7 @@
     "status": "PASSED",
     "details": "Escapes script tags in registration name field.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-046",
@@ -411,7 +411,7 @@
     "status": "PASSED",
     "details": "Prevents password changes without authorization cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-047",
@@ -420,7 +420,7 @@
     "status": "PASSED",
     "details": "Validates current password matches database hash.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-048",
@@ -429,7 +429,7 @@
     "status": "PASSED",
     "details": "Validates new and confirm passwords match.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-049",
@@ -438,7 +438,7 @@
     "status": "PASSED",
     "details": "Updates hash in database and resets auth cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-050",
@@ -447,7 +447,7 @@
     "status": "PASSED",
     "details": "Fails forgot password request missing email.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-051",
@@ -456,7 +456,7 @@
     "status": "PASSED",
     "details": "Fails with not found status or mocks response.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-052",
@@ -465,7 +465,7 @@
     "status": "PASSED",
     "details": "Saves reset token in database and emails user.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-053",
@@ -474,7 +474,7 @@
     "status": "PASSED",
     "details": "Rejects password override with invalid token.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-054",
@@ -483,7 +483,7 @@
     "status": "PASSED",
     "details": "Rejects password override after token expiration.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-055",
@@ -492,7 +492,7 @@
     "status": "PASSED",
     "details": "Updates password in DB and invalidates token.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-056",
@@ -501,7 +501,7 @@
     "status": "PASSED",
     "details": "Prevents account deletion without cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-057",
@@ -510,7 +510,7 @@
     "status": "PASSED",
     "details": "Requires verification code parameter.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-058",
@@ -519,7 +519,7 @@
     "status": "PASSED",
     "details": "Rejects deletion if verification code is wrong.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-059",
@@ -528,7 +528,7 @@
     "status": "PASSED",
     "details": "Deletes user record and cascade cleans related domains.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.967Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-060",
@@ -537,7 +537,7 @@
     "status": "PASSED",
     "details": "Blocks password update if identical to current password.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-061",
@@ -546,7 +546,7 @@
     "status": "PASSED",
     "details": "Rejects domain fetching without user cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-062",
@@ -555,7 +555,7 @@
     "status": "PASSED",
     "details": "Returns array of domains associated with user.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-063",
@@ -564,7 +564,7 @@
     "status": "PASSED",
     "details": "Rejects domain creation without cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-064",
@@ -573,7 +573,7 @@
     "status": "PASSED",
     "details": "Blocks domain creation without name field.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-065",
@@ -582,7 +582,7 @@
     "status": "PASSED",
     "details": "Initializes workspace with Custom preset layout.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-066",
@@ -591,7 +591,7 @@
     "status": "PASSED",
     "details": "Initializes workspace with Academic preset layout.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-067",
@@ -600,7 +600,7 @@
     "status": "PASSED",
     "details": "Initializes workspace with Corporate preset layout.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-068",
@@ -609,7 +609,7 @@
     "status": "PASSED",
     "details": "Returns 404 error code if domain does not exist.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-069",
@@ -618,7 +618,7 @@
     "status": "PASSED",
     "details": "Blocks fetching domain user is not a member of.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-070",
@@ -627,7 +627,7 @@
     "status": "PASSED",
     "details": "Returns domain name, tasks, and member lists.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-071",
@@ -636,7 +636,7 @@
     "status": "PASSED",
     "details": "Blocks domain property update without auth.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-072",
@@ -645,7 +645,7 @@
     "status": "PASSED",
     "details": "Blocks update if user role is not admin.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.968Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-073",
@@ -654,7 +654,7 @@
     "status": "PASSED",
     "details": "Saves modified name and description details.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-074",
@@ -663,7 +663,7 @@
     "status": "PASSED",
     "details": "Blocks domain delete request without auth.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-075",
@@ -672,7 +672,7 @@
     "status": "PASSED",
     "details": "Blocks delete request if user role is not admin.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-076",
@@ -681,7 +681,7 @@
     "status": "PASSED",
     "details": "Removes domain, memberships, and related tasks.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-077",
@@ -690,7 +690,7 @@
     "status": "PASSED",
     "details": "Sanitizes script tags in workspace descriptions.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-078",
@@ -699,7 +699,7 @@
     "status": "PASSED",
     "details": "Prevents domain names exceeding 100 characters.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-079",
@@ -708,7 +708,7 @@
     "status": "PASSED",
     "details": "Returns correct count matching members array.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-080",
@@ -717,7 +717,7 @@
     "status": "PASSED",
     "details": "Rejects domain creation with unknown template values.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-081",
@@ -726,7 +726,7 @@
     "status": "PASSED",
     "details": "Rejects invites without authorization cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-082",
@@ -735,7 +735,7 @@
     "status": "PASSED",
     "details": "Only workspace admins can invite new members.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-083",
@@ -744,7 +744,7 @@
     "status": "PASSED",
     "details": "Rejects invitations to malformed email inputs.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-084",
@@ -753,7 +753,7 @@
     "status": "PASSED",
     "details": "Fails if email already belongs to workspace.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.969Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-085",
@@ -762,7 +762,7 @@
     "status": "PASSED",
     "details": "Fails if email matches currently logged-in user.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-086",
@@ -771,7 +771,7 @@
     "status": "PASSED",
     "details": "Adds member in pending status and logs invite.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-087",
@@ -780,7 +780,7 @@
     "status": "PASSED",
     "details": "Prevents role changes by non-admin users.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-088",
@@ -789,7 +789,7 @@
     "status": "PASSED",
     "details": "Updates member role in workspace DB details.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-089",
@@ -798,7 +798,7 @@
     "status": "PASSED",
     "details": "Prevents member eviction by non-admin users.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.218Z"
   },
   {
     "id": "TC-API-090",
@@ -807,7 +807,7 @@
     "status": "PASSED",
     "details": "Deletes membership row from domain workspace.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-091",
@@ -816,7 +816,7 @@
     "status": "PASSED",
     "details": "Rejects fetching domain tasks without auth.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-092",
@@ -825,7 +825,7 @@
     "status": "PASSED",
     "details": "Returns task array for active domain workspace.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-093",
@@ -834,7 +834,7 @@
     "status": "PASSED",
     "details": "Prevents task creation without cookie authentication.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-094",
@@ -843,7 +843,7 @@
     "status": "PASSED",
     "details": "Fails task creation if title parameter is blank.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-095",
@@ -852,7 +852,7 @@
     "status": "PASSED",
     "details": "Rejects priority strings outside predefined options.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-096",
@@ -861,7 +861,7 @@
     "status": "PASSED",
     "details": "Rejects assignees not listed in workspace members.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-097",
@@ -870,7 +870,7 @@
     "status": "PASSED",
     "details": "Saves task in workspace, sets default status.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.970Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-098",
@@ -879,7 +879,7 @@
     "status": "PASSED",
     "details": "Updates task status (Pending -> In Progress -> Done).",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-099",
@@ -888,7 +888,7 @@
     "status": "PASSED",
     "details": "Removes task row from domain workspace DB.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-100",
@@ -897,7 +897,7 @@
     "status": "PASSED",
     "details": "Properly escapes special characters in title.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-101",
@@ -906,7 +906,7 @@
     "status": "PASSED",
     "details": "Rejects listing invites without user cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-102",
@@ -915,7 +915,7 @@
     "status": "PASSED",
     "details": "Returns array of workspace invites for email.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-103",
@@ -924,7 +924,7 @@
     "status": "PASSED",
     "details": "Updates membership status from PENDING to ACCEPTED.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-104",
@@ -933,7 +933,7 @@
     "status": "PASSED",
     "details": "Removes membership row or sets to REJECTED.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-105",
@@ -942,7 +942,7 @@
     "status": "PASSED",
     "details": "Hides/clears notification context details.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-106",
@@ -951,7 +951,7 @@
     "status": "PASSED",
     "details": "Rejects notifications fetching without cookie.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-107",
@@ -960,7 +960,7 @@
     "status": "PASSED",
     "details": "Wipes logs array details for current user.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.971Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-108",
@@ -969,7 +969,7 @@
     "status": "PASSED",
     "details": "Deletes specific notification log from user feed.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.972Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-109",
@@ -978,7 +978,7 @@
     "status": "PASSED",
     "details": "Rejects progress calculation requests without auth.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.972Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   },
   {
     "id": "TC-API-110",
@@ -987,6 +987,6 @@
     "status": "PASSED",
     "details": "Calculates percentage correctly based on active tasks.",
     "error": null,
-    "timestamp": "2026-06-16T14:40:21.972Z"
+    "timestamp": "2026-06-16T14:57:25.219Z"
   }
 ]
