@@ -7,8 +7,8 @@
     "passed": 125,
     "failed": 0,
     "passRate": "100.0%",
-    "duration": "308.5s",
-    "timestamp": "2026-06-16T07:26:08.805Z",
+    "duration": "286.3s",
+    "timestamp": "2026-06-16T14:27:14.802Z",
     "categories": {
       "UI/UX Test": {
         "total": 25,
@@ -44,7 +44,7 @@
       "category": "UI/UX Test",
       "description": "Verify the homepage/onboarding page loads without errors",
       "status": "PASS",
-      "duration": 2378
+      "duration": 4125
     },
     {
       "id": "TC002",
@@ -52,7 +52,7 @@
       "category": "UI/UX Test",
       "description": "Verify first onboarding slide shows Organize Your Life title",
       "status": "PASS",
-      "duration": 3083
+      "duration": 4958
     },
     {
       "id": "TC003",
@@ -60,7 +60,7 @@
       "category": "UI/UX Test",
       "description": "Verify Next button exists on onboarding slides",
       "status": "PASS",
-      "duration": 2766
+      "duration": 3342
     },
     {
       "id": "TC004",
@@ -68,7 +68,7 @@
       "category": "UI/UX Test",
       "description": "Verify all 3 onboarding slides content is defined",
       "status": "PASS",
-      "duration": 2294
+      "duration": 2720
     },
     {
       "id": "TC005",
@@ -76,7 +76,7 @@
       "category": "UI/UX Test",
       "description": "Verify Skip button is present on non-final onboarding slides",
       "status": "PASS",
-      "duration": 3747
+      "duration": 2746
     },
     {
       "id": "TC006",
@@ -84,7 +84,7 @@
       "category": "UI/UX Test",
       "description": "Verify Get Started button on the final onboarding slide",
       "status": "PASS",
-      "duration": 4381
+      "duration": 3565
     },
     {
       "id": "TC007",
@@ -92,7 +92,7 @@
       "category": "UI/UX Test",
       "description": "Verify login page shows Welcome Back title, subtitle, fields, submit",
       "status": "PASS",
-      "duration": 4915
+      "duration": 2902
     },
     {
       "id": "TC008",
@@ -100,7 +100,7 @@
       "category": "UI/UX Test",
       "description": "Verify register page shows Create Account title with fields",
       "status": "PASS",
-      "duration": 5389
+      "duration": 3909
     },
     {
       "id": "TC009",
@@ -108,7 +108,7 @@
       "category": "UI/UX Test",
       "description": "Verify the app uses dark theme as default color scheme",
       "status": "PASS",
-      "duration": 3129
+      "duration": 2576
     },
     {
       "id": "TC010",
@@ -116,7 +116,7 @@
       "category": "UI/UX Test",
       "description": "Verify glass-panel class with backdrop-filter blur on UI panels",
       "status": "PASS",
-      "duration": 2529
+      "duration": 2587
     },
     {
       "id": "TC011",
@@ -124,7 +124,7 @@
       "category": "UI/UX Test",
       "description": "Verify AnimatedBackground component renders on auth pages",
       "status": "PASS",
-      "duration": 2802
+      "duration": 2051
     },
     {
       "id": "TC012",
@@ -132,7 +132,7 @@
       "category": "UI/UX Test",
       "description": "Verify login form has both email and password input fields",
       "status": "PASS",
-      "duration": 3279
+      "duration": 13336
     },
     {
       "id": "TC013",
@@ -140,7 +140,7 @@
       "category": "UI/UX Test",
       "description": "Verify Sign up link on login page pointing to /register",
       "status": "PASS",
-      "duration": 2365
+      "duration": 1968
     },
     {
       "id": "TC014",
@@ -148,7 +148,7 @@
       "category": "UI/UX Test",
       "description": "Verify Sign in link on register page pointing to /login",
       "status": "PASS",
-      "duration": 2412
+      "duration": 1842
     },
     {
       "id": "TC015",
@@ -156,7 +156,7 @@
       "category": "UI/UX Test",
       "description": "Verify browser tab title contains Core Scheduler",
       "status": "PASS",
-      "duration": 8
+      "duration": 13
     },
     {
       "id": "TC016",
@@ -164,7 +164,7 @@
       "category": "UI/UX Test",
       "description": "Verify favicon/icon resource is referenced in HTML head",
       "status": "PASS",
-      "duration": 6
+      "duration": 7
     },
     {
       "id": "TC017",
@@ -180,7 +180,7 @@
       "category": "UI/UX Test",
       "description": "Verify Google Font Inter is loaded and applied to body",
       "status": "PASS",
-      "duration": 7
+      "duration": 5
     },
     {
       "id": "TC019",
@@ -188,7 +188,7 @@
       "category": "UI/UX Test",
       "description": "Verify CSS custom properties like --accent-primary in :root",
       "status": "PASS",
-      "duration": 8
+      "duration": 5
     },
     {
       "id": "TC020",
@@ -196,7 +196,7 @@
       "category": "UI/UX Test",
       "description": "Verify btn-primary with hover transform and box-shadow",
       "status": "PASS",
-      "duration": 6
+      "duration": 3
     },
     {
       "id": "TC021",
@@ -204,7 +204,7 @@
       "category": "UI/UX Test",
       "description": "Verify input fields show accent border and shadow on focus",
       "status": "PASS",
-      "duration": 4717
+      "duration": 3372
     },
     {
       "id": "TC022",
@@ -212,7 +212,7 @@
       "category": "UI/UX Test",
       "description": "Verify error messages use var(--danger) color for feedback",
       "status": "PASS",
-      "duration": 13
+      "duration": 4
     },
     {
       "id": "TC023",
@@ -236,7 +236,7 @@
       "category": "UI/UX Test",
       "description": "Verify meta viewport with width=device-width for mobile",
       "status": "PASS",
-      "duration": 16
+      "duration": 6
     },
     {
       "id": "TC026",
@@ -244,7 +244,7 @@
       "category": "Functional Test",
       "description": "Verify successful login redirects to dashboard",
       "status": "PASS",
-      "duration": 8113
+      "duration": 6612
     },
     {
       "id": "TC027",
@@ -252,7 +252,7 @@
       "category": "Functional Test",
       "description": "Verify failed login shows error message on screen",
       "status": "PASS",
-      "duration": 6630
+      "duration": 6763
     },
     {
       "id": "TC028",
@@ -260,7 +260,7 @@
       "category": "Functional Test",
       "description": "Verify HTML5 validation prevents empty email submission",
       "status": "PASS",
-      "duration": 5234
+      "duration": 4227
     },
     {
       "id": "TC029",
@@ -268,7 +268,7 @@
       "category": "Functional Test",
       "description": "Verify HTML5 validation prevents empty password submission",
       "status": "PASS",
-      "duration": 9981
+      "duration": 3996
     },
     {
       "id": "TC030",
@@ -276,7 +276,7 @@
       "category": "Functional Test",
       "description": "Verify Forgot password link is visible and clickable",
       "status": "PASS",
-      "duration": 3216
+      "duration": 2664
     },
     {
       "id": "TC031",
@@ -284,7 +284,7 @@
       "category": "Functional Test",
       "description": "Verify back navigation from forgot password mode returns to login",
       "status": "PASS",
-      "duration": 2846
+      "duration": 2353
     },
     {
       "id": "TC032",
@@ -292,7 +292,7 @@
       "category": "Functional Test",
       "description": "Verify register step 1 shows name and email fields",
       "status": "PASS",
-      "duration": 3328
+      "duration": 2694
     },
     {
       "id": "TC033",
@@ -300,7 +300,7 @@
       "category": "Functional Test",
       "description": "Verify Sign up link navigates to /register page",
       "status": "PASS",
-      "duration": 2767
+      "duration": 2345
     },
     {
       "id": "TC034",
@@ -308,7 +308,7 @@
       "category": "Functional Test",
       "description": "Verify unauthenticated users are redirected to /login",
       "status": "PASS",
-      "duration": 4413
+      "duration": 4549
     },
     {
       "id": "TC035",
@@ -316,7 +316,7 @@
       "category": "Functional Test",
       "description": "Verify authenticated users can access the dashboard",
       "status": "PASS",
-      "duration": 8786
+      "duration": 8222
     },
     {
       "id": "TC036",
@@ -324,7 +324,7 @@
       "category": "Functional Test",
       "description": "Verify dashboard shows Your Workspaces or equivalent heading",
       "status": "PASS",
-      "duration": 5
+      "duration": 6
     },
     {
       "id": "TC037",
@@ -340,7 +340,7 @@
       "category": "Functional Test",
       "description": "Verify template selection page renders with template cards",
       "status": "PASS",
-      "duration": 4033
+      "duration": 3761
     },
     {
       "id": "TC039",
@@ -348,7 +348,7 @@
       "category": "Functional Test",
       "description": "Verify Room Core template is shown in template selection",
       "status": "PASS",
-      "duration": 5
+      "duration": 3
     },
     {
       "id": "TC040",
@@ -356,7 +356,7 @@
       "category": "Functional Test",
       "description": "Verify Software Team template is shown in template selection",
       "status": "PASS",
-      "duration": 6
+      "duration": 3
     },
     {
       "id": "TC041",
@@ -364,7 +364,7 @@
       "category": "Functional Test",
       "description": "Verify College Project template is shown in template selection",
       "status": "PASS",
-      "duration": 6
+      "duration": 3
     },
     {
       "id": "TC042",
@@ -372,7 +372,7 @@
       "category": "Functional Test",
       "description": "Verify custom domain creation form renders correctly",
       "status": "PASS",
-      "duration": 3785
+      "duration": 3673
     },
     {
       "id": "TC043",
@@ -428,7 +428,7 @@
       "category": "Functional Test",
       "description": "Verify sidebar has Dashboard, New Domain, Invitations, Progress, Terms, Profile links",
       "status": "PASS",
-      "duration": 4
+      "duration": 3
     },
     {
       "id": "TC050",
@@ -436,7 +436,7 @@
       "category": "Functional Test",
       "description": "Verify clicking Dashboard in sidebar navigates to /dashboard",
       "status": "PASS",
-      "duration": 3314
+      "duration": 2805
     },
     {
       "id": "TC051",
@@ -444,7 +444,7 @@
       "category": "Functional Test",
       "description": "Verify New Domain sidebar link navigates correctly",
       "status": "PASS",
-      "duration": 3276
+      "duration": 2848
     },
     {
       "id": "TC052",
@@ -452,7 +452,7 @@
       "category": "Functional Test",
       "description": "Verify Create Domain sidebar link navigates correctly",
       "status": "PASS",
-      "duration": 4129
+      "duration": 2897
     },
     {
       "id": "TC053",
@@ -460,7 +460,7 @@
       "category": "Functional Test",
       "description": "Verify Invitations sidebar link navigates correctly",
       "status": "PASS",
-      "duration": 3299
+      "duration": 3246
     },
     {
       "id": "TC054",
@@ -468,7 +468,7 @@
       "category": "Functional Test",
       "description": "Verify Progress sidebar link navigates correctly",
       "status": "PASS",
-      "duration": 3340
+      "duration": 3164
     },
     {
       "id": "TC055",
@@ -476,7 +476,7 @@
       "category": "Functional Test",
       "description": "Verify Terms sidebar link navigates correctly",
       "status": "PASS",
-      "duration": 3440
+      "duration": 3170
     },
     {
       "id": "TC056",
@@ -484,7 +484,7 @@
       "category": "Functional Test",
       "description": "Verify Profile sidebar link navigates correctly",
       "status": "PASS",
-      "duration": 3311
+      "duration": 3031
     },
     {
       "id": "TC057",
@@ -508,7 +508,7 @@
       "category": "Functional Test",
       "description": "Verify profile page shows user name and email",
       "status": "PASS",
-      "duration": 3805
+      "duration": 3329
     },
     {
       "id": "TC060",
@@ -516,7 +516,7 @@
       "category": "Functional Test",
       "description": "Verify change password form is visible on profile page",
       "status": "PASS",
-      "duration": 3
+      "duration": 4
     },
     {
       "id": "TC061",
@@ -524,7 +524,7 @@
       "category": "Validation Test",
       "description": "Verify email input has type=email for browser validation",
       "status": "PASS",
-      "duration": 3172
+      "duration": 2697
     },
     {
       "id": "TC062",
@@ -532,7 +532,7 @@
       "category": "Validation Test",
       "description": "Verify password input masks characters with type=password",
       "status": "PASS",
-      "duration": 15
+      "duration": 12
     },
     {
       "id": "TC063",
@@ -540,7 +540,7 @@
       "category": "Validation Test",
       "description": "Verify register email input has type=email validation",
       "status": "PASS",
-      "duration": 3128
+      "duration": 2633
     },
     {
       "id": "TC064",
@@ -548,7 +548,7 @@
       "category": "Validation Test",
       "description": "Verify register name field has required attribute",
       "status": "PASS",
-      "duration": 16
+      "duration": 14
     },
     {
       "id": "TC065",
@@ -572,7 +572,7 @@
       "category": "Validation Test",
       "description": "Verify required attributes prevent empty login form submission",
       "status": "PASS",
-      "duration": 3184
+      "duration": 2688
     },
     {
       "id": "TC068",
@@ -580,7 +580,7 @@
       "category": "Validation Test",
       "description": "Verify required attributes prevent empty register submission",
       "status": "PASS",
-      "duration": 3188
+      "duration": 2745
     },
     {
       "id": "TC069",
@@ -612,7 +612,7 @@
       "category": "Validation Test",
       "description": "Verify current password field is required for change",
       "status": "PASS",
-      "duration": 8812
+      "duration": 8323
     },
     {
       "id": "TC073",
@@ -620,7 +620,7 @@
       "category": "Validation Test",
       "description": "Verify new password field is required",
       "status": "PASS",
-      "duration": 5040
+      "duration": 5012
     },
     {
       "id": "TC074",
@@ -628,7 +628,7 @@
       "category": "Validation Test",
       "description": "Verify confirm password field is required",
       "status": "PASS",
-      "duration": 5065
+      "duration": 5053
     },
     {
       "id": "TC075",
@@ -644,7 +644,7 @@
       "category": "Validation Test",
       "description": "Verify new password field enforces minLength=6",
       "status": "PASS",
-      "duration": 10071
+      "duration": 10086
     },
     {
       "id": "TC077",
@@ -668,7 +668,7 @@
       "category": "Validation Test",
       "description": "Verify submit button disables during login request",
       "status": "PASS",
-      "duration": 3177
+      "duration": 2643
     },
     {
       "id": "TC080",
@@ -676,7 +676,7 @@
       "category": "Validation Test",
       "description": "Verify submit button disables during register request",
       "status": "PASS",
-      "duration": 2957
+      "duration": 2427
     },
     {
       "id": "TC081",
@@ -684,7 +684,7 @@
       "category": "Validation Test",
       "description": "Verify script tags are properly handled in input fields",
       "status": "PASS",
-      "duration": 3858
+      "duration": 3132
     },
     {
       "id": "TC082",
@@ -692,7 +692,7 @@
       "category": "Validation Test",
       "description": "Verify SQL injection strings are handled safely",
       "status": "PASS",
-      "duration": 469
+      "duration": 339
     },
     {
       "id": "TC083",
@@ -700,7 +700,7 @@
       "category": "Validation Test",
       "description": "Verify HTML entities are properly escaped in UI rendering",
       "status": "PASS",
-      "duration": 4137
+      "duration": 2483
     },
     {
       "id": "TC084",
@@ -708,7 +708,7 @@
       "category": "Validation Test",
       "description": "Verify extremely long text input does not break the UI",
       "status": "PASS",
-      "duration": 1456
+      "duration": 686
     },
     {
       "id": "TC085",
@@ -716,7 +716,7 @@
       "category": "Validation Test",
       "description": "Verify international/special characters work in name field",
       "status": "PASS",
-      "duration": 3759
+      "duration": 2929
     },
     {
       "id": "TC086",
@@ -724,7 +724,7 @@
       "category": "E2E Integration Test",
       "description": "Verify complete login -> dashboard navigation flow works end-to-end",
       "status": "PASS",
-      "duration": 4068
+      "duration": 3412
     },
     {
       "id": "TC087",
@@ -732,7 +732,7 @@
       "category": "E2E Integration Test",
       "description": "Verify login -> navigate to create workspace page works",
       "status": "PASS",
-      "duration": 4042
+      "duration": 3393
     },
     {
       "id": "TC088",
@@ -740,7 +740,7 @@
       "category": "E2E Integration Test",
       "description": "Verify login -> navigate to progress page shows domain progress",
       "status": "PASS",
-      "duration": 3988
+      "duration": 3383
     },
     {
       "id": "TC089",
@@ -748,7 +748,7 @@
       "category": "E2E Integration Test",
       "description": "Verify login -> navigate to invitations page shows messages",
       "status": "PASS",
-      "duration": 3832
+      "duration": 3693
     },
     {
       "id": "TC090",
@@ -756,7 +756,7 @@
       "category": "E2E Integration Test",
       "description": "Verify login -> navigate to profile page shows user info",
       "status": "PASS",
-      "duration": 3838
+      "duration": 3430
     },
     {
       "id": "TC091",
@@ -764,7 +764,7 @@
       "category": "E2E Integration Test",
       "description": "Verify login -> navigate to terms page shows content",
       "status": "PASS",
-      "duration": 3906
+      "duration": 3488
     },
     {
       "id": "TC092",
@@ -772,7 +772,7 @@
       "category": "E2E Integration Test",
       "description": "Verify settings panel opens/closes in sidebar",
       "status": "PASS",
-      "duration": 3296
+      "duration": 2900
     },
     {
       "id": "TC093",
@@ -780,7 +780,7 @@
       "category": "E2E Integration Test",
       "description": "Verify switching to light mode saves to localStorage",
       "status": "PASS",
-      "duration": 530
+      "duration": 517
     },
     {
       "id": "TC094",
@@ -788,7 +788,7 @@
       "category": "E2E Integration Test",
       "description": "Verify switching to dark mode saves to localStorage",
       "status": "PASS",
-      "duration": 513
+      "duration": 512
     },
     {
       "id": "TC095",
@@ -796,7 +796,7 @@
       "category": "E2E Integration Test",
       "description": "Verify language options (English, Telugu, Hindi) in settings",
       "status": "PASS",
-      "duration": 4
+      "duration": 5
     },
     {
       "id": "TC096",
@@ -804,7 +804,7 @@
       "category": "E2E Integration Test",
       "description": "Verify font size options (Small, Medium, Large) in settings",
       "status": "PASS",
-      "duration": 3
+      "duration": 5
     },
     {
       "id": "TC097",
@@ -812,7 +812,7 @@
       "category": "E2E Integration Test",
       "description": "Verify settings gear icon toggles the settings panel",
       "status": "PASS",
-      "duration": 4
+      "duration": 5
     },
     {
       "id": "TC098",
@@ -820,7 +820,7 @@
       "category": "E2E Integration Test",
       "description": "Verify scroll-to-top button appears after scrolling down",
       "status": "PASS",
-      "duration": 517
+      "duration": 518
     },
     {
       "id": "TC099",
@@ -828,7 +828,7 @@
       "category": "E2E Integration Test",
       "description": "Verify hamburger menu appears on mobile-width viewport",
       "status": "PASS",
-      "duration": 921
+      "duration": 892
     },
     {
       "id": "TC100",
@@ -844,7 +844,7 @@
       "category": "E2E Integration Test",
       "description": "Verify terms page shows About, Workflow, Roles, ToS sections",
       "status": "PASS",
-      "duration": 3829
+      "duration": 3322
     },
     {
       "id": "TC102",
@@ -852,7 +852,7 @@
       "category": "E2E Integration Test",
       "description": "Verify profile page includes change password form",
       "status": "PASS",
-      "duration": 3867
+      "duration": 3319
     },
     {
       "id": "TC103",
@@ -860,7 +860,7 @@
       "category": "E2E Integration Test",
       "description": "Verify profile page includes Danger Zone with delete account",
       "status": "PASS",
-      "duration": 5
+      "duration": 4
     },
     {
       "id": "TC104",
@@ -868,7 +868,7 @@
       "category": "E2E Integration Test",
       "description": "Verify progress page shows domain progress or empty state",
       "status": "PASS",
-      "duration": 3943
+      "duration": 3381
     },
     {
       "id": "TC105",
@@ -876,7 +876,7 @@
       "category": "E2E Integration Test",
       "description": "Verify back/breadcrumb navigation functions properly",
       "status": "PASS",
-      "duration": 3475
+      "duration": 2902
     },
     {
       "id": "TC106",
@@ -884,7 +884,7 @@
       "category": "Deployable Status Test",
       "description": "Verify the Next.js application responds on localhost:3000",
       "status": "PASS",
-      "duration": 116
+      "duration": 918
     },
     {
       "id": "TC107",
@@ -892,7 +892,7 @@
       "category": "Deployable Status Test",
       "description": "Verify /login, /register, /dashboard and other routes serve content",
       "status": "PASS",
-      "duration": 267
+      "duration": 1638
     },
     {
       "id": "TC108",
@@ -900,7 +900,7 @@
       "category": "Deployable Status Test",
       "description": "Verify API endpoints respond with proper status codes",
       "status": "PASS",
-      "duration": 29
+      "duration": 614
     },
     {
       "id": "TC109",
@@ -908,7 +908,7 @@
       "category": "Deployable Status Test",
       "description": "Verify favicon and static assets return 200 status",
       "status": "PASS",
-      "duration": 7
+      "duration": 303
     },
     {
       "id": "TC110",
@@ -916,7 +916,7 @@
       "category": "Deployable Status Test",
       "description": "Verify HTML has proper html, head, body and meta elements",
       "status": "PASS",
-      "duration": 2410
+      "duration": 1851
     },
     {
       "id": "TC111",
@@ -924,7 +924,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify homepage renders correctly on 375x812 mobile viewport",
       "status": "PASS",
-      "duration": 3670
+      "duration": 3774
     },
     {
       "id": "TC112",
@@ -932,7 +932,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify login page adapts to mobile viewport without overflow",
       "status": "PASS",
-      "duration": 3607
+      "duration": 3031
     },
     {
       "id": "TC113",
@@ -940,7 +940,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify register page adapts to mobile viewport correctly",
       "status": "PASS",
-      "duration": 3298
+      "duration": 2862
     },
     {
       "id": "TC114",
@@ -948,7 +948,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify email and password fields are visible and tappable on mobile",
       "status": "PASS",
-      "duration": 3136
+      "duration": 2685
     },
     {
       "id": "TC115",
@@ -956,7 +956,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify login form submits successfully on mobile viewport",
       "status": "PASS",
-      "duration": 7149
+      "duration": 6419
     },
     {
       "id": "TC116",
@@ -964,7 +964,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify hamburger/mobile menu icon is displayed on narrow viewport",
       "status": "PASS",
-      "duration": 5
+      "duration": 4
     },
     {
       "id": "TC117",
@@ -972,7 +972,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify dashboard page renders on mobile without horizontal scroll",
       "status": "PASS",
-      "duration": 3788
+      "duration": 3373
     },
     {
       "id": "TC118",
@@ -980,7 +980,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify template cards stack vertically on mobile viewport",
       "status": "PASS",
-      "duration": 3897
+      "duration": 3381
     },
     {
       "id": "TC119",
@@ -988,7 +988,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify profile page sections are accessible on mobile",
       "status": "PASS",
-      "duration": 3900
+      "duration": 3582
     },
     {
       "id": "TC120",
@@ -996,7 +996,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify progress bars and cards render on mobile viewport",
       "status": "PASS",
-      "duration": 3803
+      "duration": 3369
     },
     {
       "id": "TC121",
@@ -1004,7 +1004,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify invitation cards are accessible on mobile viewport",
       "status": "PASS",
-      "duration": 3829
+      "duration": 3400
     },
     {
       "id": "TC122",
@@ -1012,7 +1012,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify terms page content is scrollable on mobile viewport",
       "status": "PASS",
-      "duration": 3084
+      "duration": 3359
     },
     {
       "id": "TC123",
@@ -1020,7 +1020,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify touch event APIs are accessible in mobile context",
       "status": "PASS",
-      "duration": 6
+      "duration": 4
     },
     {
       "id": "TC124",
@@ -1028,7 +1028,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify viewport meta prevents unwanted pinch-zoom scaling",
       "status": "PASS",
-      "duration": 5
+      "duration": 4
     },
     {
       "id": "TC125",
@@ -1036,7 +1036,7 @@
       "category": "Appium Mobile Test",
       "description": "Verify app renders correctly in landscape mobile orientation",
       "status": "PASS",
-      "duration": 4168
+      "duration": 3703
     }
   ]
 }

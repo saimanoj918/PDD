@@ -75,23 +75,10 @@ jobs:
         EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
 
-    - name: Run Web E2E Tests
-      run: node tests/run_e2e.js
+    - name: Run Selenium 125 Test Suite
+      run: node tests/selenium/test_runner.js
       env:
-        DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        JWT_SECRET: ${{ secrets.JWT_SECRET }}
-
-    - name: Run Backend API Tests
-      if: always()
-      run: node tests/run_backend_tests.js
-      env:
-        DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        JWT_SECRET: ${{ secrets.JWT_SECRET }}
-
-    - name: Run Mobile WebView E2E Tests
-      if: always()
-      run: node tests/run_mobile_e2e.js
-      env:
+        TARGET_URL: http://localhost:3000
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
@@ -101,12 +88,8 @@ jobs:
       with:
         name: e2e-test-reports
         path: |
-          tests/e2e_report.json
-          tests/e2e_report.html
-          tests/backend_report.json
-          tests/backend_report.html
-          tests/mobile_e2e_report.json
-          tests/mobile_e2e_report.html
+          apptestingreport.xlsx
+          tests/selenium/test_results.json
 
     - name: Compile Unified Test Summary
       if: always()

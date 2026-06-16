@@ -3,7 +3,7 @@
  */
 
 const config = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: process.env.TARGET_URL || 'http://localhost:3000',
   timeout: 15000,
   headless: true,
   testUser: {

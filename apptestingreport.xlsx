@@ -19,7 +19,7 @@
 <Worksheet ss:Name="Executive Summary"><Table>
 <Column ss:Width="220"/><Column ss:Width="250"/><Column ss:Width="120"/>
 <Row ss:Height="30"><Cell ss:StyleID="title" ss:MergeAcross="2"><Data ss:Type="String">E2E Test Report — PDD Core Scheduler</Data></Cell></Row>
-<Row><Cell ss:StyleID="sub"><Data ss:Type="String">Report Generated: 6/16/2026, 12:56:08 PM</Data></Cell></Row>
+<Row><Cell ss:StyleID="sub"><Data ss:Type="String">Report Generated: 6/16/2026, 7:57:14 PM</Data></Cell></Row>
 <Row><Cell><Data ss:Type="String"></Data></Cell></Row>
 <Row ss:Height="24"><Cell ss:StyleID="hdr"><Data ss:Type="String">Summary Metric</Data></Cell><Cell ss:StyleID="hdr"><Data ss:Type="String">Value</Data></Cell><Cell ss:StyleID="hdr"><Data ss:Type="String">Status</Data></Cell></Row>
 <Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Project Name</Data></Cell><Cell><Data ss:Type="String">PDD Core Scheduler</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">—</Data></Cell></Row>
@@ -29,7 +29,7 @@
 <Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Tests Passed</Data></Cell><Cell><Data ss:Type="Number">125</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ ALL PASSED</Data></Cell></Row>
 <Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Tests Failed</Data></Cell><Cell><Data ss:Type="Number">0</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ NONE</Data></Cell></Row>
 <Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Pass Rate</Data></Cell><Cell><Data ss:Type="String">100.0%</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔</Data></Cell></Row>
-<Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Total Duration</Data></Cell><Cell><Data ss:Type="String">308.5s</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">—</Data></Cell></Row>
+<Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Total Duration</Data></Cell><Cell><Data ss:Type="String">286.3s</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">—</Data></Cell></Row>
 <Row><Cell><Data ss:Type="String"></Data></Cell></Row>
 <Row ss:Height="24"><Cell ss:StyleID="hdr"><Data ss:Type="String">Category</Data></Cell><Cell ss:StyleID="hdr"><Data ss:Type="String">Tests (Passed / Total)</Data></Cell><Cell ss:StyleID="hdr"><Data ss:Type="String">Result</Data></Cell></Row><Row><Cell ss:StyleID="lbl"><Data ss:Type="String">UI/UX Test</Data></Cell><Cell><Data ss:Type="String">25 / 25</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ PASSED</Data></Cell></Row><Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Functional Test</Data></Cell><Cell><Data ss:Type="String">35 / 35</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ PASSED</Data></Cell></Row><Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Validation Test</Data></Cell><Cell><Data ss:Type="String">25 / 25</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ PASSED</Data></Cell></Row><Row><Cell ss:StyleID="lbl"><Data ss:Type="String">E2E Integration Test</Data></Cell><Cell><Data ss:Type="String">20 / 20</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ PASSED</Data></Cell></Row><Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Deployable Status Test</Data></Cell><Cell><Data ss:Type="String">5 / 5</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ PASSED</Data></Cell></Row><Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Appium Mobile Test</Data></Cell><Cell><Data ss:Type="String">15 / 15</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">✔ PASSED</Data></Cell></Row><Row><Cell><Data ss:Type="String"></Data></Cell></Row>
 <Row><Cell ss:StyleID="hdr"><Data ss:Type="String">Deployment Status</Data></Cell><Cell ss:StyleID="pass" ss:MergeAcross="1"><Data ss:Type="String">✔ READY FOR DEPLOYMENT</Data></Cell></Row>
@@ -48,112 +48,112 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify the homepage/onboarding page loads without errors</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2378</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4125</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC002</Data></Cell>
 <Cell><Data ss:Type="String">Onboarding slide 1 content renders</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify first onboarding slide shows Organize Your Life title</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3083</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4958</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC003</Data></Cell>
 <Cell><Data ss:Type="String">Onboarding slide navigation buttons present</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Next button exists on onboarding slides</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2766</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3342</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC004</Data></Cell>
 <Cell><Data ss:Type="String">Onboarding multi-slide content available</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify all 3 onboarding slides content is defined</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2294</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2720</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC005</Data></Cell>
 <Cell><Data ss:Type="String">Skip button visibility on onboarding</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Skip button is present on non-final onboarding slides</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3747</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2746</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC006</Data></Cell>
 <Cell><Data ss:Type="String">Get Started CTA button present</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Get Started button on the final onboarding slide</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4381</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3565</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC007</Data></Cell>
 <Cell><Data ss:Type="String">Login page layout renders correctly</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login page shows Welcome Back title, subtitle, fields, submit</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4915</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2902</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC008</Data></Cell>
 <Cell><Data ss:Type="String">Register page layout renders correctly</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify register page shows Create Account title with fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5389</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3909</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC009</Data></Cell>
 <Cell><Data ss:Type="String">Dark theme applied as default</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify the app uses dark theme as default color scheme</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3129</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2576</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC010</Data></Cell>
 <Cell><Data ss:Type="String">Glassmorphism CSS styling applied</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify glass-panel class with backdrop-filter blur on UI panels</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2529</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2587</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC011</Data></Cell>
 <Cell><Data ss:Type="String">Animated background component renders</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify AnimatedBackground component renders on auth pages</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2802</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2051</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC012</Data></Cell>
 <Cell><Data ss:Type="String">Login form has email and password fields</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login form has both email and password input fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3279</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">13336</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC013</Data></Cell>
 <Cell><Data ss:Type="String">Sign Up navigation link on login page</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Sign up link on login page pointing to /register</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2365</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1968</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC014</Data></Cell>
 <Cell><Data ss:Type="String">Sign In navigation link on register page</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Sign in link on register page pointing to /login</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2412</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1842</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC015</Data></Cell>
 <Cell><Data ss:Type="String">Page title contains application name</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify browser tab title contains Core Scheduler</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">13</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC016</Data></Cell>
 <Cell><Data ss:Type="String">Favicon loads correctly</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify favicon/icon resource is referenced in HTML head</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">7</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC017</Data></Cell>
 <Cell><Data ss:Type="String">Meta description tag present</Data></Cell>
@@ -167,35 +167,35 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Google Font Inter is loaded and applied to body</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">7</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC019</Data></Cell>
 <Cell><Data ss:Type="String">CSS design system variables defined</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify CSS custom properties like --accent-primary in :root</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC020</Data></Cell>
 <Cell><Data ss:Type="String">Button hover effects CSS applied</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify btn-primary with hover transform and box-shadow</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC021</Data></Cell>
 <Cell><Data ss:Type="String">Input field focus styling works</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify input fields show accent border and shadow on focus</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4717</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3372</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC022</Data></Cell>
 <Cell><Data ss:Type="String">Error message styling with danger color</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify error messages use var(--danger) color for feedback</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">13</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC023</Data></Cell>
 <Cell><Data ss:Type="String">Success message styling with success color</Data></Cell>
@@ -216,84 +216,84 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">UI/UX Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify meta viewport with width=device-width for mobile</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC026</Data></Cell>
 <Cell><Data ss:Type="String">Login with valid credentials succeeds</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify successful login redirects to dashboard</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8113</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6612</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC027</Data></Cell>
 <Cell><Data ss:Type="String">Login with invalid credentials shows error</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify failed login shows error message on screen</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6630</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6763</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC028</Data></Cell>
 <Cell><Data ss:Type="String">Login with empty email shows validation</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML5 validation prevents empty email submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5234</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4227</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC029</Data></Cell>
 <Cell><Data ss:Type="String">Login with empty password shows validation</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML5 validation prevents empty password submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">9981</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3996</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC030</Data></Cell>
 <Cell><Data ss:Type="String">Forgot password link present on login</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Forgot password link is visible and clickable</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3216</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2664</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC031</Data></Cell>
 <Cell><Data ss:Type="String">Back to login from forgot password works</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify back navigation from forgot password mode returns to login</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2846</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2353</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC032</Data></Cell>
 <Cell><Data ss:Type="String">Register page shows step 1 fields</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify register step 1 shows name and email fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3328</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2694</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC033</Data></Cell>
 <Cell><Data ss:Type="String">Registration link from login page works</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Sign up link navigates to /register page</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2767</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2345</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC034</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard redirects unauthenticated to login</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify unauthenticated users are redirected to /login</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4413</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4549</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC035</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard loads for authenticated users</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify authenticated users can access the dashboard</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8786</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">8222</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC036</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard displays Your Workspaces heading</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify dashboard shows Your Workspaces or equivalent heading</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC037</Data></Cell>
 <Cell><Data ss:Type="String">Create workspace button visible on dashboard</Data></Cell>
@@ -307,35 +307,35 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify template selection page renders with template cards</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4033</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3761</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC039</Data></Cell>
 <Cell><Data ss:Type="String">Room Core template card displayed</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Room Core template is shown in template selection</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC040</Data></Cell>
 <Cell><Data ss:Type="String">Software Team template card displayed</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Software Team template is shown in template selection</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC041</Data></Cell>
 <Cell><Data ss:Type="String">College Project template card displayed</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify College Project template is shown in template selection</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC042</Data></Cell>
 <Cell><Data ss:Type="String">Custom domain creation page loads</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify custom domain creation form renders correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3785</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3673</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC043</Data></Cell>
 <Cell><Data ss:Type="String">Domain creation with name succeeds</Data></Cell>
@@ -384,56 +384,56 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify sidebar has Dashboard, New Domain, Invitations, Progress, Terms, Profile links</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC050</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard link in sidebar navigable</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify clicking Dashboard in sidebar navigates to /dashboard</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3314</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2805</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC051</Data></Cell>
 <Cell><Data ss:Type="String">New Domain link in sidebar navigable</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify New Domain sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3276</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2848</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC052</Data></Cell>
 <Cell><Data ss:Type="String">Create Domain link in sidebar navigable</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Create Domain sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4129</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2897</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC053</Data></Cell>
 <Cell><Data ss:Type="String">Invitations link in sidebar navigable</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Invitations sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3299</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3246</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC054</Data></Cell>
 <Cell><Data ss:Type="String">Progress link in sidebar navigable</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Progress sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3340</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3164</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC055</Data></Cell>
 <Cell><Data ss:Type="String">Terms link in sidebar navigable</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Terms sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3440</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3170</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC056</Data></Cell>
 <Cell><Data ss:Type="String">Profile link in sidebar navigable</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify Profile sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3311</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3031</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC057</Data></Cell>
 <Cell><Data ss:Type="String">Logout button present in sidebar</Data></Cell>
@@ -454,42 +454,42 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page shows user name and email</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3805</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3329</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC060</Data></Cell>
 <Cell><Data ss:Type="String">Profile page shows change password section</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Functional Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify change password form is visible on profile page</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC061</Data></Cell>
 <Cell><Data ss:Type="String">Email field validates email format on login</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify email input has type=email for browser validation</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3172</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2697</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC062</Data></Cell>
 <Cell><Data ss:Type="String">Password field is type=password on login</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify password input masks characters with type=password</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">15</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">12</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC063</Data></Cell>
 <Cell><Data ss:Type="String">Email field validates format on register</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify register email input has type=email validation</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3128</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2633</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC064</Data></Cell>
 <Cell><Data ss:Type="String">Name field required on register</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify register name field has required attribute</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">14</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC065</Data></Cell>
 <Cell><Data ss:Type="String">OTP field max length is 6</Data></Cell>
@@ -510,14 +510,14 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify required attributes prevent empty login form submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3184</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2688</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC068</Data></Cell>
 <Cell><Data ss:Type="String">Empty form submission prevented on register</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify required attributes prevent empty register submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3188</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2745</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC069</Data></Cell>
 <Cell><Data ss:Type="String">Domain name required for workspace creation</Data></Cell>
@@ -545,21 +545,21 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify current password field is required for change</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8812</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">8323</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC073</Data></Cell>
 <Cell><Data ss:Type="String">Change password requires new password</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify new password field is required</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5040</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5012</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC074</Data></Cell>
 <Cell><Data ss:Type="String">Change password requires confirm password</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify confirm password field is required</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5065</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5053</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC075</Data></Cell>
 <Cell><Data ss:Type="String">New passwords must match validation</Data></Cell>
@@ -573,7 +573,7 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify new password field enforces minLength=6</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">10071</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">10086</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC077</Data></Cell>
 <Cell><Data ss:Type="String">Forgot password OTP field maxlength 6</Data></Cell>
@@ -594,147 +594,147 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify submit button disables during login request</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3177</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2643</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC080</Data></Cell>
 <Cell><Data ss:Type="String">Form prevents double submission on register</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify submit button disables during register request</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2957</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2427</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC081</Data></Cell>
 <Cell><Data ss:Type="String">XSS protection - script tags in inputs</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify script tags are properly handled in input fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3858</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3132</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC082</Data></Cell>
 <Cell><Data ss:Type="String">SQL injection protection in inputs</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify SQL injection strings are handled safely</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">469</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">339</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC083</Data></Cell>
 <Cell><Data ss:Type="String">HTML entities escaped in display</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML entities are properly escaped in UI rendering</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4137</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2483</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC084</Data></Cell>
 <Cell><Data ss:Type="String">Long text input handled gracefully</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify extremely long text input does not break the UI</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">1456</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">686</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC085</Data></Cell>
 <Cell><Data ss:Type="String">Special characters in name field handled</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Validation Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify international/special characters work in name field</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3759</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2929</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC086</Data></Cell>
 <Cell><Data ss:Type="String">Full login to dashboard flow</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify complete login -&gt; dashboard navigation flow works end-to-end</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4068</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3412</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC087</Data></Cell>
 <Cell><Data ss:Type="String">Full login to create workspace flow</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to create workspace page works</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4042</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3393</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC088</Data></Cell>
 <Cell><Data ss:Type="String">Full login to progress page flow</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to progress page shows domain progress</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3988</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3383</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC089</Data></Cell>
 <Cell><Data ss:Type="String">Full login to invitations page flow</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to invitations page shows messages</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3832</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3693</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC090</Data></Cell>
 <Cell><Data ss:Type="String">Full login to profile page flow</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to profile page shows user info</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3838</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3430</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC091</Data></Cell>
 <Cell><Data ss:Type="String">Full login to terms page flow</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to terms page shows content</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3906</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3488</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC092</Data></Cell>
 <Cell><Data ss:Type="String">Settings panel toggle in sidebar</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify settings panel opens/closes in sidebar</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3296</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2900</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC093</Data></Cell>
 <Cell><Data ss:Type="String">Theme switch to light mode persists</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify switching to light mode saves to localStorage</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">530</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">517</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC094</Data></Cell>
 <Cell><Data ss:Type="String">Theme switch to dark mode persists</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify switching to dark mode saves to localStorage</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">513</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">512</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC095</Data></Cell>
 <Cell><Data ss:Type="String">Language setting available in settings</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify language options (English, Telugu, Hindi) in settings</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC096</Data></Cell>
 <Cell><Data ss:Type="String">Font size setting available in settings</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify font size options (Small, Medium, Large) in settings</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC097</Data></Cell>
 <Cell><Data ss:Type="String">Settings panel opens and closes</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify settings gear icon toggles the settings panel</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC098</Data></Cell>
 <Cell><Data ss:Type="String">Scroll to top button appears on scroll</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify scroll-to-top button appears after scrolling down</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">517</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">518</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC099</Data></Cell>
 <Cell><Data ss:Type="String">Mobile menu button visible on narrow viewport</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify hamburger menu appears on mobile-width viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">921</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">892</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC100</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard empty state rendering</Data></Cell>
@@ -748,175 +748,175 @@
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify terms page shows About, Workflow, Roles, ToS sections</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3829</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3322</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC102</Data></Cell>
 <Cell><Data ss:Type="String">Profile page change password section</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page includes change password form</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3867</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3319</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC103</Data></Cell>
 <Cell><Data ss:Type="String">Profile page danger zone section</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page includes Danger Zone with delete account</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC104</Data></Cell>
 <Cell><Data ss:Type="String">Progress page displays content</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify progress page shows domain progress or empty state</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3943</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3381</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC105</Data></Cell>
 <Cell><Data ss:Type="String">Navigation breadcrumbs work correctly</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">E2E Integration Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify back/breadcrumb navigation functions properly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3475</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2902</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC106</Data></Cell>
 <Cell><Data ss:Type="String">Application serves on port 3000</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Deployable Status Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify the Next.js application responds on localhost:3000</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">116</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">918</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC107</Data></Cell>
 <Cell><Data ss:Type="String">All critical routes return responses</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Deployable Status Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify /login, /register, /dashboard and other routes serve content</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">267</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1638</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC108</Data></Cell>
 <Cell><Data ss:Type="String">API routes return proper responses</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Deployable Status Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify API endpoints respond with proper status codes</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">29</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">614</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC109</Data></Cell>
 <Cell><Data ss:Type="String">Static assets load correctly</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Deployable Status Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify favicon and static assets return 200 status</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">7</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">303</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC110</Data></Cell>
 <Cell><Data ss:Type="String">HTML document proper structure</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Deployable Status Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML has proper html, head, body and meta elements</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2410</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1851</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC111</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Homepage renders on small viewport</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify homepage renders correctly on 375x812 mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3670</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3774</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC112</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Login page renders responsively</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login page adapts to mobile viewport without overflow</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3607</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3031</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC113</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Register page renders responsively</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify register page adapts to mobile viewport correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3298</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2862</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC114</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Login form fields accessible</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify email and password fields are visible and tappable on mobile</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3136</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2685</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC115</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Login form submission works</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify login form submits successfully on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">7149</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6419</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC116</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Hamburger menu visible</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify hamburger/mobile menu icon is displayed on narrow viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC117</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Dashboard loads on mobile</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify dashboard page renders on mobile without horizontal scroll</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3788</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3373</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC118</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Template selection page responsive</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify template cards stack vertically on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3897</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3381</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC119</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Profile page renders on mobile</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page sections are accessible on mobile</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3900</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3582</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC120</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Progress page renders on mobile</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify progress bars and cards render on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3803</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3369</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC121</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Invitations page renders on mobile</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify invitation cards are accessible on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3829</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3400</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC122</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Terms page scrollable on mobile</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify terms page content is scrollable on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3084</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3359</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC123</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Touch events supported</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify touch event APIs are accessible in mobile context</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC124</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Viewport prevents unwanted zoom</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify viewport meta prevents unwanted pinch-zoom scaling</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC125</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Landscape orientation renders</Data></Cell>
 <Cell ss:StyleID="cat"><Data ss:Type="String">Appium Mobile Test</Data></Cell>
 <Cell><Data ss:Type="String">Verify app renders correctly in landscape mobile orientation</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4168</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3703</Data></Cell>
 </Row></Table></Worksheet><Worksheet ss:Name="UI-UX Tests"><Table>
 <Column ss:Width="55"/><Column ss:Width="310"/><Column ss:Width="400"/><Column ss:Width="70"/><Column ss:Width="90"/>
 <Row ss:Height="24">
@@ -930,97 +930,97 @@
 <Cell><Data ss:Type="String">Homepage loads correctly</Data></Cell>
 <Cell><Data ss:Type="String">Verify the homepage/onboarding page loads without errors</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2378</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4125</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC002</Data></Cell>
 <Cell><Data ss:Type="String">Onboarding slide 1 content renders</Data></Cell>
 <Cell><Data ss:Type="String">Verify first onboarding slide shows Organize Your Life title</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3083</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4958</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC003</Data></Cell>
 <Cell><Data ss:Type="String">Onboarding slide navigation buttons present</Data></Cell>
 <Cell><Data ss:Type="String">Verify Next button exists on onboarding slides</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2766</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3342</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC004</Data></Cell>
 <Cell><Data ss:Type="String">Onboarding multi-slide content available</Data></Cell>
 <Cell><Data ss:Type="String">Verify all 3 onboarding slides content is defined</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2294</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2720</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC005</Data></Cell>
 <Cell><Data ss:Type="String">Skip button visibility on onboarding</Data></Cell>
 <Cell><Data ss:Type="String">Verify Skip button is present on non-final onboarding slides</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3747</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2746</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC006</Data></Cell>
 <Cell><Data ss:Type="String">Get Started CTA button present</Data></Cell>
 <Cell><Data ss:Type="String">Verify Get Started button on the final onboarding slide</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4381</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3565</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC007</Data></Cell>
 <Cell><Data ss:Type="String">Login page layout renders correctly</Data></Cell>
 <Cell><Data ss:Type="String">Verify login page shows Welcome Back title, subtitle, fields, submit</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4915</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2902</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC008</Data></Cell>
 <Cell><Data ss:Type="String">Register page layout renders correctly</Data></Cell>
 <Cell><Data ss:Type="String">Verify register page shows Create Account title with fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5389</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3909</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC009</Data></Cell>
 <Cell><Data ss:Type="String">Dark theme applied as default</Data></Cell>
 <Cell><Data ss:Type="String">Verify the app uses dark theme as default color scheme</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3129</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2576</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC010</Data></Cell>
 <Cell><Data ss:Type="String">Glassmorphism CSS styling applied</Data></Cell>
 <Cell><Data ss:Type="String">Verify glass-panel class with backdrop-filter blur on UI panels</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2529</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2587</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC011</Data></Cell>
 <Cell><Data ss:Type="String">Animated background component renders</Data></Cell>
 <Cell><Data ss:Type="String">Verify AnimatedBackground component renders on auth pages</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2802</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2051</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC012</Data></Cell>
 <Cell><Data ss:Type="String">Login form has email and password fields</Data></Cell>
 <Cell><Data ss:Type="String">Verify login form has both email and password input fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3279</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">13336</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC013</Data></Cell>
 <Cell><Data ss:Type="String">Sign Up navigation link on login page</Data></Cell>
 <Cell><Data ss:Type="String">Verify Sign up link on login page pointing to /register</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2365</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1968</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC014</Data></Cell>
 <Cell><Data ss:Type="String">Sign In navigation link on register page</Data></Cell>
 <Cell><Data ss:Type="String">Verify Sign in link on register page pointing to /login</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2412</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1842</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC015</Data></Cell>
 <Cell><Data ss:Type="String">Page title contains application name</Data></Cell>
 <Cell><Data ss:Type="String">Verify browser tab title contains Core Scheduler</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">13</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC016</Data></Cell>
 <Cell><Data ss:Type="String">Favicon loads correctly</Data></Cell>
 <Cell><Data ss:Type="String">Verify favicon/icon resource is referenced in HTML head</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">7</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC017</Data></Cell>
 <Cell><Data ss:Type="String">Meta description tag present</Data></Cell>
@@ -1032,31 +1032,31 @@
 <Cell><Data ss:Type="String">Inter font family loaded</Data></Cell>
 <Cell><Data ss:Type="String">Verify Google Font Inter is loaded and applied to body</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">7</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC019</Data></Cell>
 <Cell><Data ss:Type="String">CSS design system variables defined</Data></Cell>
 <Cell><Data ss:Type="String">Verify CSS custom properties like --accent-primary in :root</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC020</Data></Cell>
 <Cell><Data ss:Type="String">Button hover effects CSS applied</Data></Cell>
 <Cell><Data ss:Type="String">Verify btn-primary with hover transform and box-shadow</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC021</Data></Cell>
 <Cell><Data ss:Type="String">Input field focus styling works</Data></Cell>
 <Cell><Data ss:Type="String">Verify input fields show accent border and shadow on focus</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4717</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3372</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC022</Data></Cell>
 <Cell><Data ss:Type="String">Error message styling with danger color</Data></Cell>
 <Cell><Data ss:Type="String">Verify error messages use var(--danger) color for feedback</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">13</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC023</Data></Cell>
 <Cell><Data ss:Type="String">Success message styling with success color</Data></Cell>
@@ -1074,7 +1074,7 @@
 <Cell><Data ss:Type="String">Responsive viewport meta tag present</Data></Cell>
 <Cell><Data ss:Type="String">Verify meta viewport with width=device-width for mobile</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
 </Row></Table></Worksheet><Worksheet ss:Name="Functional Tests"><Table>
 <Column ss:Width="55"/><Column ss:Width="310"/><Column ss:Width="400"/><Column ss:Width="70"/><Column ss:Width="90"/>
 <Row ss:Height="24">
@@ -1088,67 +1088,67 @@
 <Cell><Data ss:Type="String">Login with valid credentials succeeds</Data></Cell>
 <Cell><Data ss:Type="String">Verify successful login redirects to dashboard</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8113</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6612</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC027</Data></Cell>
 <Cell><Data ss:Type="String">Login with invalid credentials shows error</Data></Cell>
 <Cell><Data ss:Type="String">Verify failed login shows error message on screen</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6630</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6763</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC028</Data></Cell>
 <Cell><Data ss:Type="String">Login with empty email shows validation</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML5 validation prevents empty email submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5234</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4227</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC029</Data></Cell>
 <Cell><Data ss:Type="String">Login with empty password shows validation</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML5 validation prevents empty password submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">9981</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3996</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC030</Data></Cell>
 <Cell><Data ss:Type="String">Forgot password link present on login</Data></Cell>
 <Cell><Data ss:Type="String">Verify Forgot password link is visible and clickable</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3216</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2664</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC031</Data></Cell>
 <Cell><Data ss:Type="String">Back to login from forgot password works</Data></Cell>
 <Cell><Data ss:Type="String">Verify back navigation from forgot password mode returns to login</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2846</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2353</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC032</Data></Cell>
 <Cell><Data ss:Type="String">Register page shows step 1 fields</Data></Cell>
 <Cell><Data ss:Type="String">Verify register step 1 shows name and email fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3328</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2694</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC033</Data></Cell>
 <Cell><Data ss:Type="String">Registration link from login page works</Data></Cell>
 <Cell><Data ss:Type="String">Verify Sign up link navigates to /register page</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2767</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2345</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC034</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard redirects unauthenticated to login</Data></Cell>
 <Cell><Data ss:Type="String">Verify unauthenticated users are redirected to /login</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4413</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4549</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC035</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard loads for authenticated users</Data></Cell>
 <Cell><Data ss:Type="String">Verify authenticated users can access the dashboard</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8786</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">8222</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC036</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard displays Your Workspaces heading</Data></Cell>
 <Cell><Data ss:Type="String">Verify dashboard shows Your Workspaces or equivalent heading</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC037</Data></Cell>
 <Cell><Data ss:Type="String">Create workspace button visible on dashboard</Data></Cell>
@@ -1160,31 +1160,31 @@
 <Cell><Data ss:Type="String">New domain page shows template selection</Data></Cell>
 <Cell><Data ss:Type="String">Verify template selection page renders with template cards</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4033</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3761</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC039</Data></Cell>
 <Cell><Data ss:Type="String">Room Core template card displayed</Data></Cell>
 <Cell><Data ss:Type="String">Verify Room Core template is shown in template selection</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC040</Data></Cell>
 <Cell><Data ss:Type="String">Software Team template card displayed</Data></Cell>
 <Cell><Data ss:Type="String">Verify Software Team template is shown in template selection</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC041</Data></Cell>
 <Cell><Data ss:Type="String">College Project template card displayed</Data></Cell>
 <Cell><Data ss:Type="String">Verify College Project template is shown in template selection</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC042</Data></Cell>
 <Cell><Data ss:Type="String">Custom domain creation page loads</Data></Cell>
 <Cell><Data ss:Type="String">Verify custom domain creation form renders correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3785</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3673</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC043</Data></Cell>
 <Cell><Data ss:Type="String">Domain creation with name succeeds</Data></Cell>
@@ -1226,49 +1226,49 @@
 <Cell><Data ss:Type="String">Sidebar navigation contains all links</Data></Cell>
 <Cell><Data ss:Type="String">Verify sidebar has Dashboard, New Domain, Invitations, Progress, Terms, Profile links</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC050</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard link in sidebar navigable</Data></Cell>
 <Cell><Data ss:Type="String">Verify clicking Dashboard in sidebar navigates to /dashboard</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3314</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2805</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC051</Data></Cell>
 <Cell><Data ss:Type="String">New Domain link in sidebar navigable</Data></Cell>
 <Cell><Data ss:Type="String">Verify New Domain sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3276</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2848</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC052</Data></Cell>
 <Cell><Data ss:Type="String">Create Domain link in sidebar navigable</Data></Cell>
 <Cell><Data ss:Type="String">Verify Create Domain sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4129</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2897</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC053</Data></Cell>
 <Cell><Data ss:Type="String">Invitations link in sidebar navigable</Data></Cell>
 <Cell><Data ss:Type="String">Verify Invitations sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3299</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3246</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC054</Data></Cell>
 <Cell><Data ss:Type="String">Progress link in sidebar navigable</Data></Cell>
 <Cell><Data ss:Type="String">Verify Progress sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3340</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3164</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC055</Data></Cell>
 <Cell><Data ss:Type="String">Terms link in sidebar navigable</Data></Cell>
 <Cell><Data ss:Type="String">Verify Terms sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3440</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3170</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC056</Data></Cell>
 <Cell><Data ss:Type="String">Profile link in sidebar navigable</Data></Cell>
 <Cell><Data ss:Type="String">Verify Profile sidebar link navigates correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3311</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3031</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC057</Data></Cell>
 <Cell><Data ss:Type="String">Logout button present in sidebar</Data></Cell>
@@ -1286,13 +1286,13 @@
 <Cell><Data ss:Type="String">Profile page displays user information</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page shows user name and email</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3805</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3329</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC060</Data></Cell>
 <Cell><Data ss:Type="String">Profile page shows change password section</Data></Cell>
 <Cell><Data ss:Type="String">Verify change password form is visible on profile page</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row></Table></Worksheet><Worksheet ss:Name="Validation Tests"><Table>
 <Column ss:Width="55"/><Column ss:Width="310"/><Column ss:Width="400"/><Column ss:Width="70"/><Column ss:Width="90"/>
 <Row ss:Height="24">
@@ -1306,25 +1306,25 @@
 <Cell><Data ss:Type="String">Email field validates email format on login</Data></Cell>
 <Cell><Data ss:Type="String">Verify email input has type=email for browser validation</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3172</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2697</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC062</Data></Cell>
 <Cell><Data ss:Type="String">Password field is type=password on login</Data></Cell>
 <Cell><Data ss:Type="String">Verify password input masks characters with type=password</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">15</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">12</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC063</Data></Cell>
 <Cell><Data ss:Type="String">Email field validates format on register</Data></Cell>
 <Cell><Data ss:Type="String">Verify register email input has type=email validation</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3128</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2633</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC064</Data></Cell>
 <Cell><Data ss:Type="String">Name field required on register</Data></Cell>
 <Cell><Data ss:Type="String">Verify register name field has required attribute</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">14</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC065</Data></Cell>
 <Cell><Data ss:Type="String">OTP field max length is 6</Data></Cell>
@@ -1342,13 +1342,13 @@
 <Cell><Data ss:Type="String">Empty form submission prevented on login</Data></Cell>
 <Cell><Data ss:Type="String">Verify required attributes prevent empty login form submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3184</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2688</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC068</Data></Cell>
 <Cell><Data ss:Type="String">Empty form submission prevented on register</Data></Cell>
 <Cell><Data ss:Type="String">Verify required attributes prevent empty register submission</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3188</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2745</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC069</Data></Cell>
 <Cell><Data ss:Type="String">Domain name required for workspace creation</Data></Cell>
@@ -1372,19 +1372,19 @@
 <Cell><Data ss:Type="String">Change password requires current password</Data></Cell>
 <Cell><Data ss:Type="String">Verify current password field is required for change</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">8812</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">8323</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC073</Data></Cell>
 <Cell><Data ss:Type="String">Change password requires new password</Data></Cell>
 <Cell><Data ss:Type="String">Verify new password field is required</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5040</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5012</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC074</Data></Cell>
 <Cell><Data ss:Type="String">Change password requires confirm password</Data></Cell>
 <Cell><Data ss:Type="String">Verify confirm password field is required</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5065</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5053</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC075</Data></Cell>
 <Cell><Data ss:Type="String">New passwords must match validation</Data></Cell>
@@ -1396,7 +1396,7 @@
 <Cell><Data ss:Type="String">New password minimum 6 characters</Data></Cell>
 <Cell><Data ss:Type="String">Verify new password field enforces minLength=6</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">10071</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">10086</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC077</Data></Cell>
 <Cell><Data ss:Type="String">Forgot password OTP field maxlength 6</Data></Cell>
@@ -1414,43 +1414,43 @@
 <Cell><Data ss:Type="String">Form prevents double submission on login</Data></Cell>
 <Cell><Data ss:Type="String">Verify submit button disables during login request</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3177</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2643</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC080</Data></Cell>
 <Cell><Data ss:Type="String">Form prevents double submission on register</Data></Cell>
 <Cell><Data ss:Type="String">Verify submit button disables during register request</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2957</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2427</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC081</Data></Cell>
 <Cell><Data ss:Type="String">XSS protection - script tags in inputs</Data></Cell>
 <Cell><Data ss:Type="String">Verify script tags are properly handled in input fields</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3858</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3132</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC082</Data></Cell>
 <Cell><Data ss:Type="String">SQL injection protection in inputs</Data></Cell>
 <Cell><Data ss:Type="String">Verify SQL injection strings are handled safely</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">469</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">339</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC083</Data></Cell>
 <Cell><Data ss:Type="String">HTML entities escaped in display</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML entities are properly escaped in UI rendering</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4137</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2483</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC084</Data></Cell>
 <Cell><Data ss:Type="String">Long text input handled gracefully</Data></Cell>
 <Cell><Data ss:Type="String">Verify extremely long text input does not break the UI</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">1456</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">686</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC085</Data></Cell>
 <Cell><Data ss:Type="String">Special characters in name field handled</Data></Cell>
 <Cell><Data ss:Type="String">Verify international/special characters work in name field</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3759</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2929</Data></Cell>
 </Row></Table></Worksheet><Worksheet ss:Name="E2E Integration"><Table>
 <Column ss:Width="55"/><Column ss:Width="310"/><Column ss:Width="400"/><Column ss:Width="70"/><Column ss:Width="90"/>
 <Row ss:Height="24">
@@ -1464,85 +1464,85 @@
 <Cell><Data ss:Type="String">Full login to dashboard flow</Data></Cell>
 <Cell><Data ss:Type="String">Verify complete login -&gt; dashboard navigation flow works end-to-end</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4068</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3412</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC087</Data></Cell>
 <Cell><Data ss:Type="String">Full login to create workspace flow</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to create workspace page works</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4042</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3393</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC088</Data></Cell>
 <Cell><Data ss:Type="String">Full login to progress page flow</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to progress page shows domain progress</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3988</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3383</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC089</Data></Cell>
 <Cell><Data ss:Type="String">Full login to invitations page flow</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to invitations page shows messages</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3832</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3693</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC090</Data></Cell>
 <Cell><Data ss:Type="String">Full login to profile page flow</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to profile page shows user info</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3838</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3430</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC091</Data></Cell>
 <Cell><Data ss:Type="String">Full login to terms page flow</Data></Cell>
 <Cell><Data ss:Type="String">Verify login -&gt; navigate to terms page shows content</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3906</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3488</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC092</Data></Cell>
 <Cell><Data ss:Type="String">Settings panel toggle in sidebar</Data></Cell>
 <Cell><Data ss:Type="String">Verify settings panel opens/closes in sidebar</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3296</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2900</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC093</Data></Cell>
 <Cell><Data ss:Type="String">Theme switch to light mode persists</Data></Cell>
 <Cell><Data ss:Type="String">Verify switching to light mode saves to localStorage</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">530</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">517</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC094</Data></Cell>
 <Cell><Data ss:Type="String">Theme switch to dark mode persists</Data></Cell>
 <Cell><Data ss:Type="String">Verify switching to dark mode saves to localStorage</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">513</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">512</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC095</Data></Cell>
 <Cell><Data ss:Type="String">Language setting available in settings</Data></Cell>
 <Cell><Data ss:Type="String">Verify language options (English, Telugu, Hindi) in settings</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC096</Data></Cell>
 <Cell><Data ss:Type="String">Font size setting available in settings</Data></Cell>
 <Cell><Data ss:Type="String">Verify font size options (Small, Medium, Large) in settings</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC097</Data></Cell>
 <Cell><Data ss:Type="String">Settings panel opens and closes</Data></Cell>
 <Cell><Data ss:Type="String">Verify settings gear icon toggles the settings panel</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC098</Data></Cell>
 <Cell><Data ss:Type="String">Scroll to top button appears on scroll</Data></Cell>
 <Cell><Data ss:Type="String">Verify scroll-to-top button appears after scrolling down</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">517</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">518</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC099</Data></Cell>
 <Cell><Data ss:Type="String">Mobile menu button visible on narrow viewport</Data></Cell>
 <Cell><Data ss:Type="String">Verify hamburger menu appears on mobile-width viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">921</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">892</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC100</Data></Cell>
 <Cell><Data ss:Type="String">Dashboard empty state rendering</Data></Cell>
@@ -1554,31 +1554,31 @@
 <Cell><Data ss:Type="String">Terms page displays all sections</Data></Cell>
 <Cell><Data ss:Type="String">Verify terms page shows About, Workflow, Roles, ToS sections</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3829</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3322</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC102</Data></Cell>
 <Cell><Data ss:Type="String">Profile page change password section</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page includes change password form</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3867</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3319</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC103</Data></Cell>
 <Cell><Data ss:Type="String">Profile page danger zone section</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page includes Danger Zone with delete account</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC104</Data></Cell>
 <Cell><Data ss:Type="String">Progress page displays content</Data></Cell>
 <Cell><Data ss:Type="String">Verify progress page shows domain progress or empty state</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3943</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3381</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC105</Data></Cell>
 <Cell><Data ss:Type="String">Navigation breadcrumbs work correctly</Data></Cell>
 <Cell><Data ss:Type="String">Verify back/breadcrumb navigation functions properly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3475</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2902</Data></Cell>
 </Row></Table></Worksheet><Worksheet ss:Name="Deployment Status"><Table>
 <Column ss:Width="55"/><Column ss:Width="310"/><Column ss:Width="400"/><Column ss:Width="70"/><Column ss:Width="90"/>
 <Row ss:Height="24">
@@ -1592,31 +1592,31 @@
 <Cell><Data ss:Type="String">Application serves on port 3000</Data></Cell>
 <Cell><Data ss:Type="String">Verify the Next.js application responds on localhost:3000</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">116</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">918</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC107</Data></Cell>
 <Cell><Data ss:Type="String">All critical routes return responses</Data></Cell>
 <Cell><Data ss:Type="String">Verify /login, /register, /dashboard and other routes serve content</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">267</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1638</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC108</Data></Cell>
 <Cell><Data ss:Type="String">API routes return proper responses</Data></Cell>
 <Cell><Data ss:Type="String">Verify API endpoints respond with proper status codes</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">29</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">614</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC109</Data></Cell>
 <Cell><Data ss:Type="String">Static assets load correctly</Data></Cell>
 <Cell><Data ss:Type="String">Verify favicon and static assets return 200 status</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">7</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">303</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC110</Data></Cell>
 <Cell><Data ss:Type="String">HTML document proper structure</Data></Cell>
 <Cell><Data ss:Type="String">Verify HTML has proper html, head, body and meta elements</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">2410</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">1851</Data></Cell>
 </Row></Table></Worksheet><Worksheet ss:Name="Appium Mobile"><Table>
 <Column ss:Width="55"/><Column ss:Width="310"/><Column ss:Width="400"/><Column ss:Width="70"/><Column ss:Width="90"/>
 <Row ss:Height="24">
@@ -1630,90 +1630,90 @@
 <Cell><Data ss:Type="String">Mobile: Homepage renders on small viewport</Data></Cell>
 <Cell><Data ss:Type="String">Verify homepage renders correctly on 375x812 mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3670</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3774</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC112</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Login page renders responsively</Data></Cell>
 <Cell><Data ss:Type="String">Verify login page adapts to mobile viewport without overflow</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3607</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3031</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC113</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Register page renders responsively</Data></Cell>
 <Cell><Data ss:Type="String">Verify register page adapts to mobile viewport correctly</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3298</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2862</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC114</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Login form fields accessible</Data></Cell>
 <Cell><Data ss:Type="String">Verify email and password fields are visible and tappable on mobile</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3136</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">2685</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC115</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Login form submission works</Data></Cell>
 <Cell><Data ss:Type="String">Verify login form submits successfully on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">7149</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">6419</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC116</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Hamburger menu visible</Data></Cell>
 <Cell><Data ss:Type="String">Verify hamburger/mobile menu icon is displayed on narrow viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC117</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Dashboard loads on mobile</Data></Cell>
 <Cell><Data ss:Type="String">Verify dashboard page renders on mobile without horizontal scroll</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3788</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3373</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC118</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Template selection page responsive</Data></Cell>
 <Cell><Data ss:Type="String">Verify template cards stack vertically on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3897</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3381</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC119</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Profile page renders on mobile</Data></Cell>
 <Cell><Data ss:Type="String">Verify profile page sections are accessible on mobile</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3900</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3582</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC120</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Progress page renders on mobile</Data></Cell>
 <Cell><Data ss:Type="String">Verify progress bars and cards render on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3803</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3369</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC121</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Invitations page renders on mobile</Data></Cell>
 <Cell><Data ss:Type="String">Verify invitation cards are accessible on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3829</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3400</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC122</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Terms page scrollable on mobile</Data></Cell>
 <Cell><Data ss:Type="String">Verify terms page content is scrollable on mobile viewport</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">3084</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3359</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC123</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Touch events supported</Data></Cell>
 <Cell><Data ss:Type="String">Verify touch event APIs are accessible in mobile context</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC124</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Viewport prevents unwanted zoom</Data></Cell>
 <Cell><Data ss:Type="String">Verify viewport meta prevents unwanted pinch-zoom scaling</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">5</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">4</Data></Cell>
 </Row><Row>
 <Cell ss:StyleID="id"><Data ss:Type="String">TC125</Data></Cell>
 <Cell><Data ss:Type="String">Mobile: Landscape orientation renders</Data></Cell>
 <Cell><Data ss:Type="String">Verify app renders correctly in landscape mobile orientation</Data></Cell>
 <Cell ss:StyleID="pass"><Data ss:Type="String">PASS</Data></Cell>
-<Cell ss:StyleID="dur"><Data ss:Type="Number">4168</Data></Cell>
+<Cell ss:StyleID="dur"><Data ss:Type="Number">3703</Data></Cell>
 </Row></Table></Worksheet>
 </Workbook>

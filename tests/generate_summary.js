@@ -4,6 +4,75 @@ const path = require('path');
 const stepSummaryFile = process.env.GITHUB_STEP_SUMMARY;
 const localSummaryFile = path.join(__dirname, 'unified_report_summary.md');
 
+// Check if the 125 selenium test suite results exist
+const seleniumResultsPath = path.join(__dirname, 'selenium', 'test_results.json');
+
+if (fs.existsSync(seleniumResultsPath)) {
+  try {
+    const data = JSON.parse(fs.readFileSync(seleniumResultsPath, 'utf8'));
+    const { summary, tests } = data;
+    
+    let md = `# 📊 PDD Scheduler Quality Assurance Dashboard
+
+Unified testing metrics across all categories defined in the 125 Selenium + Appium test suite.
+
+---
+
+## 1. Testing Summary Dashboard
+
+| Metric | Value |
+| :--- | :--- |
+| **Project** | ${summary.projectName || 'PDD Core Scheduler'} |
+| **Framework** | ${summary.testFramework || 'Selenium WebDriver 4.x + Appium (Mobile Emulation)'} |
+| **Browser** | ${summary.browser || 'Chrome Headless'} |
+| **Total Test Cases** | ${summary.totalTests} |
+| **Passed** | ${summary.passed} ✅ |
+| **Failed** | ${summary.failed} ${summary.failed > 0 ? '❌' : '✅'} |
+| **Pass Rate** | ${summary.passRate} |
+| **Duration** | ${summary.duration} |
+| **Overall Status** | ${summary.failed === 0 ? 'READY FOR DEPLOYMENT ✅' : '⚠️ ACTION REQUIRED (Failures Detected)'} |
+
+---
+
+## 2. Category Breakdown
+
+| Category | Total Tests | Passed | Failed | Status |
+| :--- | :---: | :---: | :---: | :---: |
+`;
+
+    for (const [cat, stats] of Object.entries(summary.categories)) {
+      const failedCount = stats.total - stats.passed;
+      md += `| **${cat}** | ${stats.total} | ${stats.passed} ✅ | ${failedCount} ${failedCount > 0 ? '❌' : '✅'} | ${failedCount === 0 ? 'Passed ✅' : 'Failed ❌'} |\n`;
+    }
+
+    md += `
+---
+
+## 3. Detailed Test Case Breakdown
+
+<details>
+<summary><b>Click to expand individual test case details</b></summary>
+
+| Test ID | Name | Category | Status | Description |
+| :--- | :--- | :--- | :--- | :--- |
+`;
+
+    tests.forEach(t => {
+      md += `| **${t.id}** | ${t.name} | ${t.category} | ${t.status === 'PASS' ? '✅ PASS' : '❌ FAIL'} | ${t.description} |\n`;
+    });
+
+    md += `
+</details>
+`;
+
+    writeReports(md);
+    process.exit(0);
+  } catch (err) {
+    console.error('Error compiling 125 tests summary, falling back to E2E/API/Mobile reports:', err);
+  }
+}
+
+// Fallback to old E2E/API/Mobile reports if the 125 suite didn't run
 function parseReport(fileName) {
   const filePath = path.join(__dirname, fileName);
   if (!fs.existsSync(filePath)) {
@@ -127,18 +196,22 @@ if (mobReport && mobReport.length > 0) {
   md += `*No mobile WebView E2E results recorded.*\n`;
 }
 
-try {
-  fs.writeFileSync(localSummaryFile, md);
-  console.log(`Local unified report summary saved to ${localSummaryFile}`);
-} catch (err) {
-  console.error('Error writing local unified step summary:', err);
-}
+writeReports(md);
 
-if (stepSummaryFile) {
+function writeReports(reportMarkdown) {
   try {
-    fs.writeFileSync(stepSummaryFile, md);
-    console.log('GitHub Actions Step Summary successfully unified.');
+    fs.writeFileSync(localSummaryFile, reportMarkdown);
+    console.log(`Local unified report summary saved to ${localSummaryFile}`);
   } catch (err) {
-    console.error('Error writing GITHUB_STEP_SUMMARY:', err);
+    console.error('Error writing local unified step summary:', err);
+  }
+
+  if (stepSummaryFile) {
+    try {
+      fs.writeFileSync(stepSummaryFile, reportMarkdown);
+      console.log('GitHub Actions Step Summary successfully unified.');
+    } catch (err) {
+      console.error('Error writing GITHUB_STEP_SUMMARY:', err);
+    }
   }
 }
