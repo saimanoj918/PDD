@@ -1,0 +1,92 @@
+[
+  {
+    "id": "TC-E2E-001",
+    "name": "Landing Page Load",
+    "type": "Functional",
+    "status": "PASSED",
+    "details": "Loaded landing page successfully. Title: \"Core Scheduler | Multi-Domain Task Manager\"",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:03.932Z"
+  },
+  {
+    "id": "TC-E2E-002",
+    "name": "Login Page Fields Check",
+    "type": "UI/UX",
+    "status": "PASSED",
+    "details": "Email, Password inputs and Log In button are fully rendered.",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:09.247Z"
+  },
+  {
+    "id": "TC-E2E-003",
+    "name": "Register Page Fields Check",
+    "type": "UI/UX",
+    "status": "PASSED",
+    "details": "Name and Email input fields (Step 1) are fully rendered.",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:14.084Z"
+  },
+  {
+    "id": "TC-E2E-004",
+    "name": "Login Form Validation - Missing Email",
+    "type": "Validation",
+    "status": "PASSED",
+    "details": "Form prevents submission or prompts for email correctly.",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:20.148Z"
+  },
+  {
+    "id": "TC-E2E-005",
+    "name": "Login Form Validation - Missing Password",
+    "type": "Validation",
+    "status": "PASSED",
+    "details": "Form validation active; blank password prevented.",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:26.194Z"
+  },
+  {
+    "id": "TC-E2E-006",
+    "name": "Login Invalid Credentials Error Message",
+    "type": "Security",
+    "status": "PASSED",
+    "details": "Feedback displayed: \"Invalid credentials...\"",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:34.510Z"
+  },
+  {
+    "id": "TC-E2E-007",
+    "name": "Register Form Validation - Invalid Email",
+    "type": "Validation",
+    "status": "PASSED",
+    "details": "Incorrect email format input blocked by client validation.",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:40.594Z"
+  },
+  {
+    "id": "TC-E2E-008",
+    "name": "Auth Protection Redirect - Dashboard",
+    "type": "Security",
+    "status": "PASSED",
+    "details": "Redirected unauthorized user successfully to \"/login\".",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:47.981Z"
+  },
+  {
+    "id": "TC-E2E-009",
+    "name": "Auth Protection Redirect - Invitations",
+    "type": "Security",
+    "status": "PASSED",
+    "details": "Redirected unauthorized user to login for invitations route.",
+    "error": null,
+    "timestamp": "2026-06-16T06:31:55.173Z"
+  },
+  {
+    "id": "TC-E2E-010",
+    "name": "Auth Protection Redirect - Profile",
+    "type": "Security",
+    "status": "PASSED",
+    "details": "Redirected unauthorized user to login for profile route.",
+    "error": null,
+    "timestamp": "2026-06-16T06:32:02.230Z"
+  }
+]
