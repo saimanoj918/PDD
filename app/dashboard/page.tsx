@@ -55,6 +55,13 @@ export default function Dashboard() {
     fetchDomains();
   }, []);
 
+  // Refresh domains list when a membership is accepted (e.g., user accepted an invitation)
+  useEffect(() => {
+    const handleMembershipUpdate = () => fetchDomains();
+    window.addEventListener('domain-membership-updated', handleMembershipUpdate);
+    return () => window.removeEventListener('domain-membership-updated', handleMembershipUpdate);
+  }, []);
+
   const handleDeleteDomain = async (e: React.MouseEvent, domainId: string) => {
     e.stopPropagation();
     if (!confirm('WARNING: Are you sure you want to delete this entire workspace and all its tasks? This cannot be undone.')) return;

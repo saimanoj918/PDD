@@ -64,6 +64,32 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
     fetchData();
   }, [domainId]);
 
+  // Reactively refresh members when someone accepts an invitation to this domain
+  useEffect(() => {
+    const fetchMembers = async () => {
+      try {
+        const res = await fetch(`/api/domains/${domainId}/members`, { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          setMembers(data.members);
+        }
+      } catch (err) {
+        console.error('Failed to refresh members:', err);
+      }
+    };
+
+    const handleMembershipUpdate = (e: Event) => {
+      const event = e as CustomEvent;
+      // Only refresh if the event is for this specific domain
+      if (!event.detail?.domainId || event.detail.domainId === domainId) {
+        fetchMembers();
+      }
+    };
+
+    window.addEventListener('domain-membership-updated', handleMembershipUpdate);
+    return () => window.removeEventListener('domain-membership-updated', handleMembershipUpdate);
+  }, [domainId]);
+
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;

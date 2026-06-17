@@ -18,7 +18,7 @@ export default function InvitationsPage() {
 
   const fetchInvitations = async () => {
     try {
-      const res = await fetch('/api/invitations');
+      const res = await fetch('/api/invitations', { cache: 'no-store' });
       if (res.ok) {
         const data = await res.json();
         setInvitations(data.invitations || []);
@@ -43,16 +43,23 @@ export default function InvitationsPage() {
       });
       
       if (res.ok) {
-        setInvitations(invitations.filter(inv => {
+        // Immediately remove the invitation card from the UI
+        setInvitations(prev => prev.filter(inv => {
           if (isRoleUpgrade) return inv.domainId !== domainId || inv.pendingRole === null;
           return inv.domainId !== domainId;
         }));
+
+        // Notify layout sidebar to refresh badge count
+        window.dispatchEvent(new Event('messages-updated'));
+
         if (action === 'accept' && !isRoleUpgrade) {
-          // Force a full refresh so the sidebar updates to show the new domain
-          window.location.href = `/dashboard/domains/${domainId}`;
-        } else {
-          // Dispatch event to update the sidebar badge notification without reloading
-          window.dispatchEvent(new Event('messages-updated'));
+          // Notify the domain page to refresh its members list reactively
+          window.dispatchEvent(new CustomEvent('domain-membership-updated', { detail: { domainId } }));
+          // Soft-navigate so the domain page mounts fresh and picks up the new membership
+          router.push(`/dashboard/domains/${domainId}`);
+        } else if (action === 'accept' && isRoleUpgrade) {
+          // Notify the domain page to refresh members for role upgrade acceptance too
+          window.dispatchEvent(new CustomEvent('domain-membership-updated', { detail: { domainId } }));
         }
       }
     } catch (error) {
