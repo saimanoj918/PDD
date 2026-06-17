@@ -78,10 +78,10 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
   const fetchData = async () => {
     try {
       const [tasksRes, membersRes, domainsRes, meRes] = await Promise.all([
-        fetch(`/api/domains/${domainId}/tasks`),
-        fetch(`/api/domains/${domainId}/members`),
-        fetch(`/api/domains`), // Quick way to get domain details
-        fetch(`/api/auth/me`)
+        fetch(`/api/domains/${domainId}/tasks`, { cache: 'no-store' }),
+        fetch(`/api/domains/${domainId}/members`, { cache: 'no-store' }),
+        fetch(`/api/domains`, { cache: 'no-store' }), // Quick way to get domain details
+        fetch(`/api/auth/me`, { cache: 'no-store' })
       ]);
 
       if (meRes.ok) {
@@ -252,7 +252,10 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
     if (!confirm('WARNING: Are you sure you want to delete this entire workspace and all its tasks? This cannot be undone.')) return;
     try {
       const res = await fetch(`/api/domains/${domainId}`, { method: 'DELETE' });
-      if (res.ok) router.push('/dashboard');
+      if (res.ok) {
+        router.push('/dashboard');
+        router.refresh();
+      }
     } catch (err) {
       console.error(err);
     }
@@ -306,7 +309,13 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
         method: 'DELETE',
       });
       if (res.ok) {
-        fetchData();
+        const isSelf = members.find(m => m.id === memberId)?.userId === currentUser?.id;
+        if (isSelf) {
+          router.push('/dashboard');
+          router.refresh();
+        } else {
+          fetchData();
+        }
       } else {
         const data = await res.json();
         alert(data.error || 'Failed to remove member');

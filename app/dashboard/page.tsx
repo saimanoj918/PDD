@@ -31,8 +31,8 @@ export default function Dashboard() {
   const fetchDomains = async () => {
     try {
       const [res, meRes] = await Promise.all([
-        fetch('/api/domains'),
-        fetch('/api/auth/me')
+        fetch('/api/domains', { cache: 'no-store' }),
+        fetch('/api/auth/me', { cache: 'no-store' })
       ]);
       
       if (meRes.ok) {
@@ -63,6 +63,7 @@ export default function Dashboard() {
       const res = await fetch(`/api/domains/${domainId}`, { method: 'DELETE' });
       if (res.ok) {
         fetchDomains(); // Refresh the list
+        router.refresh(); // Refresh client router cache
       }
     } catch (err) {
       console.error(err);
