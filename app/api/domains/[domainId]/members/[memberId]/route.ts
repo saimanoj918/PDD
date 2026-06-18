@@ -99,11 +99,11 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ d
 
     // Allow self-removal (leaving a workspace) — requires password verification
     const isSelfRemoval = targetMember.userId === user.id;
+    let reason = '';
 
     if (isSelfRemoval) {
       // Parse password and reason from request body
       let password = '';
-      let reason = '';
       try {
         const body = await request.json();
         password = body.password || '';
