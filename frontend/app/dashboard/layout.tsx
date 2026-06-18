@@ -107,6 +107,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   const handleLogout = async () => {
     await fetch('/api/auth/logout', { method: 'POST' });
+    document.cookie = 'auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
     setIsMobileMenuOpen(false);
     router.push('/login');
   };

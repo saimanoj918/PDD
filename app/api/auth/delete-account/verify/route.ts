@@ -130,7 +130,7 @@ export async function POST(request: Request) {
 
     // Clear the auth cookie to log them out
     const response = NextResponse.json({ success: true, message: 'Account deleted successfully' });
-    response.cookies.set('auth-token', '', { path: '/', maxAge: 0 });
+    response.cookies.set('auth-token', '', { path: '/', maxAge: 0, httpOnly: false });
     response.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
     response.headers.set('Pragma', 'no-cache');
     response.headers.set('Expires', '0');

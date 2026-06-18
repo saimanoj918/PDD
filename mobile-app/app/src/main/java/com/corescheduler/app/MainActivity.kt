@@ -31,7 +31,22 @@ class MainActivity : AppCompatActivity() {
         cookieManager.setAcceptThirdPartyCookies(webView, true)
         
         // Force links and redirects to open in the WebView instead of the device browser
-        webView.webViewClient = WebViewClient()
+        webView.webViewClient = object : WebViewClient() {
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                val currentUrl = url ?: ""
+                val isLoggedOutPage = currentUrl.endsWith("/login") || 
+                                      currentUrl.endsWith("/register") || 
+                                      currentUrl == appUrl || 
+                                      currentUrl.endsWith("/")
+                if (isLoggedOutPage) {
+                    webView.evaluateJavascript(
+                        "document.cookie = \"auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT\";", 
+                        null
+                    )
+                }
+            }
+        }
         webView.webChromeClient = WebChromeClient()
 
         // The live Render URL for your deployed web application
