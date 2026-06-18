@@ -19,7 +19,10 @@ export async function PUT(request: Request, { params }: { params: Promise<{ doma
       return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
     }
 
-    const taskToUpdate = await prisma.task.findUnique({ where: { id: taskId, domainId } });
+    const taskToUpdate = await prisma.task.findUnique({
+      where: { id: taskId, domainId },
+      include: { domain: { select: { name: true, template: true } } }
+    });
     if (!taskToUpdate) {
       return NextResponse.json({ error: 'Task not found' }, { status: 404 });
     }
@@ -29,21 +32,60 @@ export async function PUT(request: Request, { params }: { params: Promise<{ doma
       return NextResponse.json({ error: 'You are not authorized to modify this task' }, { status: 403 });
     }
 
+    const domainTemplate = taskToUpdate.domain?.template || '';
+    const isRoomCore = domainTemplate === 'Room Core';
+
     let finalStatus = status;
-    if (membership.role === 'MEMBER' && status === 'COMPLETED') {
+    // For non-Room Core domains: when a MEMBER marks a task COMPLETED → send for approval first
+    if (!isRoomCore && membership.role === 'MEMBER' && status === 'COMPLETED') {
       finalStatus = 'PENDING_APPROVAL';
     }
 
     const updatedTask = await prisma.task.update({
       where: { id: taskId, domainId },
-      data: { 
-        title, 
-        description, 
-        priority, 
+      data: {
+        title,
+        description,
+        priority,
         status: finalStatus,
         dueDate: dueDate ? new Date(dueDate) : null
       }
     });
+
+    // If task moved to PENDING_APPROVAL, notify all admins and sub-admins in the domain
+    if (finalStatus === 'PENDING_APPROVAL') {
+      const approvers = await prisma.domainMember.findMany({
+        where: {
+          domainId,
+          status: 'ACCEPTED',
+          role: { in: ['ADMIN', 'SUB_ADMIN'] }
+        },
+        include: { user: { select: { id: true, name: true } } }
+      });
+
+      const assigneeName = user.name;
+      const taskTitle = updatedTask.title;
+
+      // Create notifications for all approvers
+      await Promise.all(
+        approvers.map(approver =>
+          prisma.notification.create({
+            data: {
+              userId: approver.userId,
+              type: 'TASK_APPROVAL_REQUEST',
+              title: '📋 Task Completion Approval Required',
+              content: JSON.stringify({
+                message: `${assigneeName} has marked "${taskTitle}" as complete. Please review and approve or decline.`,
+                taskId,
+                domainId,
+                taskTitle,
+                assigneeName
+              })
+            }
+          })
+        )
+      );
+    }
 
     return NextResponse.json({ task: updatedTask });
   } catch (error) {
@@ -51,6 +93,7 @@ export async function PUT(request: Request, { params }: { params: Promise<{ doma
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
+
 
 export async function DELETE(request: Request, { params }: { params: Promise<{ domainId: string, taskId: string }> }) {
   try {
@@ -80,6 +123,16 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ d
 
     await prisma.task.delete({
       where: { id: taskId, domainId }
+    });
+
+    // Delete any pending task approval request notifications for this task
+    await prisma.notification.deleteMany({
+      where: {
+        type: 'TASK_APPROVAL_REQUEST',
+        content: {
+          contains: taskId
+        }
+      }
     });
 
     return NextResponse.json({ success: true });

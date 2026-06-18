@@ -125,6 +125,16 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ d
       where: { id: taskId, domainId }
     });
 
+    // Delete any pending task approval request notifications for this task
+    await prisma.notification.deleteMany({
+      where: {
+        type: 'TASK_APPROVAL_REQUEST',
+        content: {
+          contains: taskId
+        }
+      }
+    });
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Delete task error:', error);

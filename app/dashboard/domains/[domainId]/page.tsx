@@ -649,9 +649,19 @@ export default function DomainDetail({ params }: { params: Promise<{ domainId: s
                             ) : task.status === 'REASSIGNED' ? (
                               // REASSIGNED: let the member re-submit or admin can override
                               task.assigneeId === currentUser?.id ? (
-                                <span style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--danger)', background: 'rgba(239,68,68,0.1)', padding: '2px 8px', borderRadius: '4px', whiteSpace: 'nowrap' }}>
-                                  🔄 Reassigned — Check Messages
-                                </span>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                  <span style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--danger)', background: 'rgba(239,68,68,0.1)', padding: '2px 8px', borderRadius: '4px', whiteSpace: 'nowrap' }}>
+                                    🔄 Reassigned — Check Messages
+                                  </span>
+                                  <button 
+                                    className="btn-icon" 
+                                    style={{ color: 'var(--success)' }}
+                                    onClick={() => handleToggleTaskStatus(task, 'COMPLETED')}
+                                    title="Re-submit for Approval"
+                                  >
+                                    <CheckCircle size={16} />
+                                  </button>
+                                </div>
                               ) : canManageTasks ? (
                                 <button 
                                   className="btn-icon" 
