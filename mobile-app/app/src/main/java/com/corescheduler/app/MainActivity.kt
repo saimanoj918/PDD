@@ -43,7 +43,16 @@ class MainActivity : AppCompatActivity() {
     // Handle back button press to navigate back within the WebView
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        if (webView.canGoBack()) {
+        val currentUrl = webView.url ?: ""
+        val appUrl = "https://pdd-main-oyhb.onrender.com"
+        
+        val isDashboardHome = currentUrl.endsWith("/dashboard") || currentUrl.endsWith("/dashboard/")
+        val isOnboardingOrLogin = currentUrl == appUrl || 
+                                  currentUrl.endsWith("/login") || 
+                                  currentUrl.endsWith("/register") || 
+                                  currentUrl.endsWith("/")
+
+        if (webView.canGoBack() && !isDashboardHome && !isOnboardingOrLogin) {
             webView.goBack()
         } else {
             super.onBackPressed()
