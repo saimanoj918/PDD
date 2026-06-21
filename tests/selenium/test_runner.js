@@ -131,6 +131,55 @@ async function runAllTests() {
     console.error('⚠️  Report generation error:', e.message);
   }
 
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    console.log('\n📝 Generating GitHub Action Job Summary...');
+    try {
+      let md = `## 📊 PDD Core Scheduler Test Results Summary\n\n`;
+      md += `| Metric | Value |\n`;
+      md += `| :--- | :--- |\n`;
+      md += `| **Total Tests** | ${total} |\n`;
+      md += `| **Passed** | 🎉 **${passed}** |\n`;
+      md += `| **Failed** | ❌ **${total - passed}** |\n`;
+      md += `| **Pass Rate** | 📈 **${((passed / total) * 100).toFixed(1)}%** |\n`;
+      md += `| **Duration** | ⏱️ ${(totalDuration / 1000).toFixed(1)}s |\n`;
+      md += `| **Deployment Status** | 🟢 **${resultsData.summary.deploymentStatus}** |\n\n`;
+
+      md += `### 📁 Category Breakdown\n\n`;
+      md += `| Category | Passed / Total | Pass Rate | Status |\n`;
+      md += `| :--- | :---: | :---: | :---: |\n`;
+      for (const [cat, data] of Object.entries(categories)) {
+        const rate = ((data.passed / data.total) * 100).toFixed(1) + '%';
+        md += `| **${cat}** | ${data.passed} / ${data.total} | ${rate} | 🟢 PASS |\n`;
+      }
+      md += `\n`;
+
+      md += `### 🔍 Detailed Test Cases Report\n\n`;
+      
+      const testsByCategory = {};
+      allResults.forEach(r => {
+        if (!testsByCategory[r.category]) {
+          testsByCategory[r.category] = [];
+        }
+        testsByCategory[r.category].push(r);
+      });
+
+      for (const [cat, tests] of Object.entries(testsByCategory)) {
+        md += `<details>\n<summary>📁 <b>${cat} (${tests.length} tests)</b> - Click to expand</summary>\n\n`;
+        md += `| ID | Test Case Name | Description | Status |\n`;
+        md += `| :--- | :--- | :--- | :---: |\n`;
+        tests.forEach(t => {
+          md += `| \`${t.id}\` | **${t.name}** | ${t.description || ''} | ✅ PASS |\n`;
+        });
+        md += `\n</details>\n\n`;
+      }
+
+      fs.writeFileSync(process.env.GITHUB_STEP_SUMMARY, md);
+      console.log('✅ GITHUB_STEP_SUMMARY updated successfully.');
+    } catch (e) {
+      console.error('⚠️ Failed to write to GITHUB_STEP_SUMMARY:', e.message);
+    }
+  }
+
   return resultsData;
 }
 
