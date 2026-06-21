@@ -1,11 +1,11 @@
 1:"$Sreact.fragment"
-3:I[7271,["177","static/chunks/app/layout-7d64d26f871acabd.js"],"FontSizeProvider"]
-4:I[9437,["177","static/chunks/app/layout-7d64d26f871acabd.js"],"LanguageProvider"]
-5:I[7001,["177","static/chunks/app/layout-7d64d26f871acabd.js"],"default"]
-6:I[2372,["177","static/chunks/app/layout-7d64d26f871acabd.js"],"default"]
+3:I[7271,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"FontSizeProvider"]
+4:I[9437,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"LanguageProvider"]
+5:I[7001,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"default"]
+6:I[2372,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"default"]
 7:I[7121,[],""]
 8:I[4581,[],""]
-:HL["/_next/static/css/63d413ef08e92ee3.css","style"]
+:HL["/PDD/_next/static/css/89bce8c214a1c07c.css","style"]
 2:T475,
               try {
                 var theme = localStorage.getItem('theme');
@@ -30,4 +30,4 @@
                   });
                 }
               } catch (e) {}
-            0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/63d413ef08e92ee3.css","precedence":"next"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"className":"__className_f367f3","children":["$","$L3",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","main",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]]}]}]}]]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zN3USSdhR-MAe8SzdKCwb"}
+            0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/PDD/_next/static/css/89bce8c214a1c07c.css","precedence":"next"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"className":"__className_c7d221","children":["$","$L3",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","main",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]]}]}]}]]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"FylsqNl38-_w9HoIudj-Z"}
