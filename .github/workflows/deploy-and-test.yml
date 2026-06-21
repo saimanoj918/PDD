@@ -62,8 +62,8 @@ jobs:
       run: |
         # Use next.config.export.ts config
         cp next.config.export.ts next.config.ts
-        # Move api directory out of app so static export succeeds
-        mv app/api app/api_temp
+        # Move api directory entirely outside of the app folder so static export succeeds
+        mv app/api ./api_temp
 
     - name: Build static website
       run: npm run build
