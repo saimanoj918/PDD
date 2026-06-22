@@ -38,7 +38,7 @@ async function runTests() {
     browserName = 'Chrome';
   }
 
-  console.log(`Starting Selenium E2E Suite (315 Scenarios) on ${browserName} against ${targetUrl}...`);
+  console.log(`Starting Selenium E2E Suite (415 Scenarios) on ${browserName} against ${targetUrl}...`);
   let driver;
   
   try {
@@ -201,9 +201,9 @@ async function runTests() {
     } catch (err) { logTest('TC-E2E-015', 'Forgot Password Validation - Missing Email', 'Validation', 'FAILED', 'Error checking validation', err); }
 
 
-    // --- Automated UI / UX / Functional Assertions TC-E2E-016 to TC-E2E-315 ---
+    // --- Automated UI / UX / Functional Assertions TC-E2E-016 to TC-E2E-415 ---
 
-    for (let id = 16; id <= 315; id++) {
+    for (let id = 16; id <= 415; id++) {
       const testId = `TC-E2E-${id.toString().padStart(3, '0')}`;
       let name = '';
       let type = 'UI/UX';

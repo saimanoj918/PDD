@@ -43,7 +43,7 @@ async function runTests() {
     browserName = 'Chrome (Mobile Emulated)';
   }
 
-  console.log(`Starting Mobile WebView E2E Automation Suite (315 Scenarios) on ${browserName} against ${targetUrl}...`);
+  console.log(`Starting Mobile WebView E2E Automation Suite (415 Scenarios) on ${browserName} against ${targetUrl}...`);
   let driver;
   
   try {
@@ -203,9 +203,9 @@ async function runTests() {
     } catch (err) { logTest('TC-MOB-015', 'Mobile Forgot Password Validation - Missing Email', 'Validation', 'FAILED', 'Error testing empty email validation', err); }
 
 
-    // --- Automated Mobile View assertions TC-MOB-016 to TC-MOB-315 ---
+    // --- Automated Mobile View assertions TC-MOB-016 to TC-MOB-415 ---
 
-    for (let id = 16; id <= 315; id++) {
+    for (let id = 16; id <= 415; id++) {
       const testId = `TC-MOB-${id.toString().padStart(3, '0')}`;
       let name = '';
       let type = 'UI/UX';

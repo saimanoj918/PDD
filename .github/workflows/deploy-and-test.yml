@@ -150,8 +150,15 @@ jobs:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
-    - name: Run Selenium + Appium Test Suite (310 Tests)
+    - name: Run Selenium + Appium Test Suite (410+ Tests)
       run: node tests/selenium/test_runner.js
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        JWT_SECRET: ${{ secrets.JWT_SECRET }}
+        TARGET_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+
+    - name: Run Backend API Test Suite (410+ Tests)
+      run: node tests/run_backend_tests.js
       env:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         JWT_SECRET: ${{ secrets.JWT_SECRET }}

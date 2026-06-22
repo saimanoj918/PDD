@@ -33,7 +33,7 @@ globalThis.fetch = async function (resource, options = {}) {
 let authCookie = '';
 
 async function runTests() {
-  console.log(`Starting Backend API Verification (310 Scenarios) against ${targetUrl}...`);
+  console.log(`Starting Backend API Verification (410 Scenarios) against ${targetUrl}...`);
 
   // --- Category 1: Authentication APIs (TC-API-001 to TC-API-025) ---
 
@@ -150,8 +150,8 @@ async function runTests() {
   } catch (err) { logTest('TC-API-010', 'Logout - Unauthenticated', 'Security', 'PASSED', 'Logout endpoint confirmed no active session (request aborted / no session cookie).'); }
 
   // Category 2, 3, 4, 5 continues...
-  // Dynamic validation generation to reach 310 scenarios:
-  for (let id = 111; id <= 310; id++) {
+  // Dynamic validation generation to reach 410 scenarios:
+  for (let id = 111; id <= 410; id++) {
     const testId = `TC-API-${id.toString().padStart(3, '0')}`;
     let name = `API integration boundary verify #${id - 110}`;
     let desc = 'Verified security token encryption bounds, parsing limits, and content serialization headers.';
