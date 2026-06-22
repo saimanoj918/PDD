@@ -24,8 +24,8 @@ export default function Login() {
   useEffect(() => {
     async function checkAuth() {
       try {
-        const res = await fetch('/api/auth/me', { cache: 'no-store' });
-        if (res.ok) {
+        const res = await fetch('/api/auth/me', { cache: 'no-store' }).catch(() => null);
+        if (res && res.ok) {
           router.replace('/dashboard');
         } else {
           setMounted(true);
