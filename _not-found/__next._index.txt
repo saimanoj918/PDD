@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-3:I[7271,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"FontSizeProvider"]
-4:I[9437,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"LanguageProvider"]
-5:I[7001,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"default"]
-6:I[2372,["177","static/chunks/app/layout-1261d07eeba4fbf8.js"],"default"]
+3:I[7271,["177","static/chunks/app/layout-2d5a78fd14dc75dc.js"],"FontSizeProvider"]
+4:I[9437,["177","static/chunks/app/layout-2d5a78fd14dc75dc.js"],"LanguageProvider"]
+5:I[7001,["177","static/chunks/app/layout-2d5a78fd14dc75dc.js"],"default"]
+6:I[2372,["177","static/chunks/app/layout-2d5a78fd14dc75dc.js"],"default"]
 7:I[7121,[],""]
 8:I[4581,[],""]
 :HL["/PDD/_next/static/css/89bce8c214a1c07c.css","style"]
@@ -30,4 +30,4 @@
                   });
                 }
               } catch (e) {}
-            0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/PDD/_next/static/css/89bce8c214a1c07c.css","precedence":"next"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"className":"__className_c7d221","children":["$","$L3",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","main",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]]}]}]}]]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Qtju3EIgRQegsPdAe6yLy"}
+            0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/PDD/_next/static/css/89bce8c214a1c07c.css","precedence":"next"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"className":"__className_c7d221","children":["$","$L3",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","main",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]]}]}]}]]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"wMTZc7RgOXquA80XUbNfI"}
