@@ -9,6 +9,7 @@ const withPWA = withPWAInit({
 const nextConfig: NextConfig = {
   output: 'export',
   basePath: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}` : '',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
