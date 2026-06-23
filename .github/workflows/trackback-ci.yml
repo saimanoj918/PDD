@@ -163,15 +163,15 @@ jobs:
           tests/selenium/test_results.json
           apptestingreport.xlsx
           test_summary.md
-          test_report.html
+          report_*.html
 
     - name: Publish HTML Report to branch
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git checkout -B test-reports
-        git add test_report.html
-        git commit -m "docs: update html test report" || echo "No changes to commit"
+        git add report_*.html
+        git commit -m "docs: update html test reports" || echo "No changes to commit"
         git push origin test-reports --force
         
   unified_summary:
