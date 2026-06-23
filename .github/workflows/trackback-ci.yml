@@ -161,6 +161,7 @@ jobs:
           tests/selenium/test_results.json
           apptestingreport.xlsx
           test_summary.md
+          test_report.html
 
   unified_summary:
     name: 📊 Unified Summary & Report Deployment

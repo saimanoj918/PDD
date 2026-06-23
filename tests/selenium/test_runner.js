@@ -154,7 +154,7 @@ async function runAllTests() {
           md += `| ${icon} **${cat}** | 5824 (Reqs) | — | — | — | 99.85% Success | ✅ OPTIMAL | [Run Details](${reportLink}) |\n`;
         } else {
           const rate = ((data.passed / data.total) * 100).toFixed(1) + '%';
-          md += `| ${icon} **${cat}** | ${data.total} | ${data.passed} | 0 | 0 | ${rate} | ✅ PASS | [XLSX Report](${reportLink}) |\n`;
+          md += `| ${icon} **${cat}** | ${data.total} | ${data.passed} | 0 | 0 | ${rate} | ✅ PASS | [HTML Report](${reportLink}) |\n`;
         }
       }
       md += `\n`;
@@ -190,10 +190,40 @@ async function runAllTests() {
       }
 
       fs.writeFileSync('test_summary.md', md);
+      
+      const htmlReport = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Executive Testing Report</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 40px; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background-color: #f2f2f2; }
+  details { margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9; }
+  summary { font-weight: bold; cursor: pointer; }
+</style>
+</head>
+<body>
+<div id="content"></div>
+<textarea id="markdown-data" style="display:none;">
+${md.replace(/</g, '&lt;').replace(/>/g, '&gt;')}
+</textarea>
+<script>
+  let rawMd = document.getElementById('markdown-data').value;
+  rawMd = rawMd.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  document.getElementById('content').innerHTML = marked.parse(rawMd);
+</script>
+</body>
+</html>`;
+      fs.writeFileSync('test_report.html', htmlReport);
+
       if (process.env.GITHUB_STEP_SUMMARY) {
         fs.writeFileSync(process.env.GITHUB_STEP_SUMMARY, md);
       }
-      console.log('✅ GITHUB_STEP_SUMMARY and test_summary.md updated successfully.');
+      console.log('✅ GITHUB_STEP_SUMMARY, test_summary.md, and test_report.html updated successfully.');
     } catch (e) {
       console.error('⚠️ Failed to write summary:', e.message);
     }
