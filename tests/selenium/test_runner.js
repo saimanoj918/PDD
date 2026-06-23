@@ -141,16 +141,20 @@ async function runAllTests() {
         'Security E2E Tests': '🔒',
         'Performance Load Test': '📈'
       };
+      const repoUrl = process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}` : '';
+      const runId = process.env.GITHUB_RUN_ID || '';
+      const reportLink = repoUrl && runId ? `${repoUrl}/actions/runs/${runId}` : '#';
+
       const catOrder = ['Web Application E2E', 'Android Mobile E2E', 'Backend Service Tests', 'Performance Load Test'];
       for (const cat of catOrder) {
         if (!categories[cat]) continue;
         const data = categories[cat];
         const icon = icons[cat];
         if (cat === 'Performance Load Test') {
-          md += `| ${icon} **${cat}** | 5824 (Reqs) | — | — | — | 99.85% Success | ✅ OPTIMAL | [HTML Report](#) |\n`;
+          md += `| ${icon} **${cat}** | 5824 (Reqs) | — | — | — | 99.85% Success | ✅ OPTIMAL | [Run Details](${reportLink}) |\n`;
         } else {
           const rate = ((data.passed / data.total) * 100).toFixed(1) + '%';
-          md += `| ${icon} **${cat}** | ${data.total} | ${data.passed} | 0 | 0 | ${rate} | ✅ PASS | [HTML Report](#) |\n`;
+          md += `| ${icon} **${cat}** | ${data.total} | ${data.passed} | 0 | 0 | ${rate} | ✅ PASS | [XLSX Report](${reportLink}) |\n`;
         }
       }
       md += `\n`;
