@@ -191,12 +191,38 @@ async function runAllTests() {
 
       fs.writeFileSync('test_summary.md', md);
       
+      let pureHtml = md
+        .replace(/^### (.*?)$/gm, '<h3>$1</h3>')
+        .replace(/^## (.*?)$/gm, '<h2>$1</h2>')
+        .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+        .replace(/`(.*?)`/g, '<code>$1</code>')
+        .replace(/\n\n/g, '<br><br>\n');
+
+      let inTable = false;
+      const lines = pureHtml.split('\n');
+      for(let i=0; i<lines.length; i++) {
+        let line = lines[i].trim();
+        if(line.startsWith('|')) {
+          if(!inTable) { 
+            inTable = true; 
+            lines[i] = '<table>\n<tr>' + line.slice(1, -1).split('|').map(c => '<th>' + c.trim() + '</th>').join('') + '</tr>'; 
+          }
+          else if(line.includes('---')) { lines[i] = ''; }
+          else { lines[i] = '<tr>' + line.slice(1, -1).split('|').map(c => '<td>' + c.trim() + '</td>').join('') + '</tr>'; }
+        } else if(inTable && line !== '') {
+          inTable = false;
+          lines[i-1] += '\n</table>';
+        }
+      }
+      if(inTable) lines[lines.length-1] += '\n</table>';
+      pureHtml = lines.filter(l => l !== '').join('\n');
+
       const htmlReport = `<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Executive Testing Report</title>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 40px; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; }
   table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
@@ -207,15 +233,7 @@ async function runAllTests() {
 </style>
 </head>
 <body>
-<div id="content"></div>
-<textarea id="markdown-data" style="display:none;">
-${md.replace(/</g, '&lt;').replace(/>/g, '&gt;')}
-</textarea>
-<script>
-  let rawMd = document.getElementById('markdown-data').value;
-  rawMd = rawMd.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-  document.getElementById('content').innerHTML = marked.parse(rawMd);
-</script>
+${pureHtml}
 </body>
 </html>`;
       fs.writeFileSync('test_report.html', htmlReport);

@@ -19,7 +19,7 @@
 <Worksheet ss:Name="Executive Summary"><Table>
 <Column ss:Width="220"/><Column ss:Width="250"/><Column ss:Width="120"/>
 <Row ss:Height="30"><Cell ss:StyleID="title" ss:MergeAcross="2"><Data ss:Type="String">E2E Test Report — PDD Core Scheduler</Data></Cell></Row>
-<Row><Cell ss:StyleID="sub"><Data ss:Type="String">Report Generated: 6/23/2026, 12:16:00 PM</Data></Cell></Row>
+<Row><Cell ss:StyleID="sub"><Data ss:Type="String">Report Generated: 6/23/2026, 1:36:43 PM</Data></Cell></Row>
 <Row><Cell><Data ss:Type="String"></Data></Cell></Row>
 <Row ss:Height="24"><Cell ss:StyleID="hdr"><Data ss:Type="String">Summary Metric</Data></Cell><Cell ss:StyleID="hdr"><Data ss:Type="String">Value</Data></Cell><Cell ss:StyleID="hdr"><Data ss:Type="String">Status</Data></Cell></Row>
 <Row><Cell ss:StyleID="lbl"><Data ss:Type="String">Project Name</Data></Cell><Cell><Data ss:Type="String">PDD Core Scheduler</Data></Cell><Cell ss:StyleID="pass"><Data ss:Type="String">—</Data></Cell></Row>
