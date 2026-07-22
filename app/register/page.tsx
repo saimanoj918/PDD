@@ -35,8 +35,6 @@ export default function Register() {
     checkAuth();
   }, [router]);
 
-  if (!mounted) return null;
-
   useEffect(() => {
     let interval: NodeJS.Timeout;
     if (resendTimer > 0) {
@@ -46,6 +44,8 @@ export default function Register() {
     }
     return () => clearInterval(interval);
   }, [resendTimer]);
+
+  if (!mounted) return null;
 
   const handleSendOtp = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
