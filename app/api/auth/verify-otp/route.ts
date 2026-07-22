@@ -10,12 +10,13 @@ export async function POST(request: Request) {
     }
 
     const cleanEmail = email.trim().toLowerCase();
+    const cleanOtp = String(otp).trim();
 
     // Find the OTP
     const validOtp = await prisma.oTP.findFirst({
       where: {
         email: cleanEmail,
-        code: otp,
+        code: cleanOtp,
         expiresAt: {
           gt: new Date() // Must not be expired
         }

@@ -12,6 +12,7 @@ export async function POST(request: Request) {
     }
 
     const cleanEmail = email.trim().toLowerCase();
+    const cleanOtp = String(otp).trim();
 
     const existingUser = await prisma.user.findUnique({
       where: { email: cleanEmail }
@@ -26,7 +27,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Verification code expired or not requested' }, { status: 400 });
     }
     
-    if (otpRecord.code !== otp) {
+    if (otpRecord.code !== cleanOtp) {
       return NextResponse.json({ error: 'Invalid verification code' }, { status: 400 });
     }
     
