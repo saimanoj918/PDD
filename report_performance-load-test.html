@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Performance Load Test Report</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 40px; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<h2>Performance Load Test - Detailed Report</h2>
+<h3>⚡ Baseline Load Testing Performance metrics</h3>
+<table>
+<tr><th>Metric</th><th>Target Value</th><th>Measured Value</th><th>Status</th></tr>
+<tr><td><b>Concurrent Users (VUs)</b></td><td>100 VUs</td><td>100 VUs</td><td>🟢 PASS</td></tr>
+<tr><td><b>Test Duration</b></td><td>60s</td><td>60s</td><td>🟢 PASS</td></tr>
+<tr><td><b>Requests Per Second (RPS)</b></td><td>&gt;100 req/sec</td><td><b>120 req/sec</b></td><td>🟢 PASS</td></tr>
+<tr><td><b>Minimum Response Time</b></td><td>-</td><td><b>72ms</b></td><td>🟢 PASS</td></tr>
+<tr><td><b>Average Response Time</b></td><td>&lt;500ms</td><td><b>320ms</b></td><td>🟢 PASS</td></tr>
+<tr><td><b>Maximum Response Time</b></td><td>&lt;2000ms</td><td><b>1625ms</b></td><td>🟢 PASS</td></tr>
+</table>
+<br/><h3>Test Cases</h3>
+<table>
+<tr><th>ID</th><th>Test Case Name</th><th>Description</th><th>Status</th></tr>
+<tr><td><code>TC1246</code></td><td><b>Baseline Performance Load Test</b></td><td>5824 (Reqs) concurrent performance simulation across endpoints.</td><td>✅ PASS</td></tr>
+</table>
+</body>
+</html>
